@@ -1,0 +1,4270 @@
+{
+  "DEVICES": {
+    "CRYRINGBEAM": {
+      "ACCELERATOR_ZONE": "CRYRING_RING", 
+      "DESCRIPTION": null, 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "CRYRINGBUMPER": {
+      "ACCELERATOR_ZONE": "CRYRING_RING", 
+      "DESCRIPTION": null, 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BUMPER", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "CRYRINGIKICKER": {
+      "ACCELERATOR_ZONE": "CRYRING_RING", 
+      "DESCRIPTION": null, 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "KICKER", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "CRYRINGOPTICS": {
+      "ACCELERATOR_ZONE": "CRYRING_RING", 
+      "DESCRIPTION": null, 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "OPTICS", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "CRYRINGORBIT": {
+      "ACCELERATOR_ZONE": "CRYRING_RING", 
+      "DESCRIPTION": null, 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "ORBIT", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "CRYRINGRF": {
+      "ACCELERATOR_ZONE": "CRYRING_RING", 
+      "DESCRIPTION": null, 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "RF", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "CRYRINGTIMEPARAM": {
+      "ACCELERATOR_ZONE": "CRYRING_RING", 
+      "DESCRIPTION": null, 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "TIMEPARAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }
+  }, 
+  "HIERARCHY_DETAILS": {
+    "ACCELERATOR": "CRYRING", 
+    "PARTICLE_TRANSFER": "CRYRING_RING", 
+    "VERSION_NUMBER": "1.0.0"
+  }, 
+  "LINKRULES_CONFIGS": {}, 
+  "PARAMETERS_HARDWARE": {}, 
+  "PARAMETERS_PHYSICS": {
+    "CRYRINGBEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/ALPHAC": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "ALPHAC", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/ALPHADR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "ALPHADR", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/BRHODOT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "BRHODOT", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/BRHO_START_END": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/BUCKETFILL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_BUCKETFILL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/BUNCHFACTOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "BUNCHFACTOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/BUNCHPATTERN": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_BUNCHPATTERN", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/CH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "CHROMATICITY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/CH_START_END": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_CHROMATICITY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/CH_THEO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "CHROMATICITY_THEO", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/CV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "CHROMATICITY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/CV_START_END": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_CHROMATICITY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/CV_THEO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "CHROMATICITY_THEO", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/DCH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "DCHROMATICITY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/DCV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "DCHROMATICITY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/DELTAR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "DELTAR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/DQH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "DTUNE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/DQV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "DTUNE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/EMIL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_EMIL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/ETA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "ETA", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/FREV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "FREV", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/GAMMA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "GAMMA", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/GEOFACT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "GEOFACT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/H": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_H", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/INJ_EMIH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_INJ_EMIH", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/INJ_EMIL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_INJ_EMIL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/INJ_EMIV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_INJ_EMIV", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/KL_AMPL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_KL_AMPL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/KL_HARM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_KL_HARM", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/KL_OFFSET": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_KL_OFFSET", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/KL_PHASE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_KL_PHASE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/MAXRH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "MAXRH", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/MAXRV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "MAXRV", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/NPARTICLES": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_NPARTICLES", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/NPERBUNCH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_NPERBUNCH", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/PHIS": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "PHIS", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/QH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "TUNE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/QH_START_END": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TUNE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/QH_THEO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "TUNE_THEO", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/QV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "TUNE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/QV_START_END": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TUNE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/QV_THEO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "TUNE_THEO", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "CRYRINGBEAM/TBUNCH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TBUNCH", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGBEAM/TREV": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGBEAM", 
+      "PARAMETER_TYPE_NAME": "TREV", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGIKICKER/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGIKICKER", 
+      "PARAMETER_TYPE_NAME": "SCALAR_KICKER_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGOPTICS/OPTICSIP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGOPTICS", 
+      "PARAMETER_TYPE_NAME": "OPTICSIP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGOPTICS/TAU_START_END": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGOPTICS", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TAU", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/ABKT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "ABKT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/CAVITY2HARMONIC": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "SCALAR_CAVITY2HARMONIC", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/DUALH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "SCALAR_DUALH", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/DUALHIP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "DUALHIP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/MODE2D": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "SCALAR_CAVITY_MODE_2D", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/PHASE_OFFSET": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "SCALAR_PHASE_OFFSET", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/PRFRING": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "PRFRING", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/URFRING": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "URFRING", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGRF/URFSC": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGRF", 
+      "PARAMETER_TYPE_NAME": "URFSC", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGTIMEPARAM/BDOT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGTIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_BDOT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGTIMEPARAM/BP_LENGTH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGTIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIME_PARTITION", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGTIMEPARAM/INCORPIP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGTIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "INCORPIP", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGTIMEPARAM/TGRID": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGTIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TGRID", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGTIMEPARAM/TROUND": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGTIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TROUND", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGTIMEPARAM/T_BP_LENGTH": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGTIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_T_BP_LENGTH", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "CRYRINGTIMEPARAM/T_WAIT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "CRYRINGTIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_T_WAIT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00MH/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00MH", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00MH/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00MH", 
+      "PARAMETER_TYPE_NAME": "DK0L_RADIAL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00MH/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00MH", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR00MH/I_POLYNOMIAL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00MH", 
+      "PARAMETER_TYPE_NAME": "I_POLYNOMIAL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR00MH/I_POLYNOMIAL_TEST": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00MH", 
+      "PARAMETER_TYPE_NAME": "I_POLYNOMIAL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR00MH/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00MH", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00QS1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS1", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00QS1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS1", 
+      "PARAMETER_TYPE_NAME": "DK1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00QS1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YR00QS1/I_POLYNOMIAL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS1", 
+      "PARAMETER_TYPE_NAME": "I_POLYNOMIAL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YR00QS1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS1", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00QS2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS2", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00QS2/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS2", 
+      "PARAMETER_TYPE_NAME": "DK1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR00QS2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YR00QS2/I_POLYNOMIAL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS2", 
+      "PARAMETER_TYPE_NAME": "I_POLYNOMIAL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YR00QS2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR00QS2", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR01LB/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR01LB", 
+      "PARAMETER_TYPE_NAME": "SCALAR_K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR01LB/TFALL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR01LB", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TFALL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR01LB/U": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR01LB", 
+      "PARAMETER_TYPE_NAME": "SCALAR_U", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KD/BLCORR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KD", 
+      "PARAMETER_TYPE_NAME": "CORR_B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KD/ICORR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KD", 
+      "PARAMETER_TYPE_NAME": "ICORR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 0
+    }, 
+    "YR02KD/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KD", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KH/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KH", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KH/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KH", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR02KH/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KH", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS1", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS1", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR02KS1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS1", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS1/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS1", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS2", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS2/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS2", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR02KS2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS2", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KS2/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KS2", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KV/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KV", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02KV/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KV", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR02KV/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02KV", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02MK1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02MK1", 
+      "PARAMETER_TYPE_NAME": "SCALAR_B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02MK1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02MK1", 
+      "PARAMETER_TYPE_NAME": "SCALAR_DK0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02MK1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02MK1", 
+      "PARAMETER_TYPE_NAME": "SCALAR_K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR02MK1/UKICK": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR02MK1", 
+      "PARAMETER_TYPE_NAME": "SCALAR_UKICK", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KH/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KH", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KH/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KH", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR04KH/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KH", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS1", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS1", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR04KS1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS1", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS1/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS1", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS2", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS2/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS2", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR04KS2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS2", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KS2/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KS2", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KV/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KV", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR04KV/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KV", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR04KV/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR04KV", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR05BE/FRF": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR05BE", 
+      "PARAMETER_TYPE_NAME": "FRF", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 0
+    }, 
+    "YR05BE/FRF_POLYNOMIAL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR05BE", 
+      "PARAMETER_TYPE_NAME": "FRF_POLYNOMIAL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 0
+    }, 
+    "YR05BE/PRF": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR05BE", 
+      "PARAMETER_TYPE_NAME": "PRF", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YR05BE/URF": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR05BE", 
+      "PARAMETER_TYPE_NAME": "URF", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 0
+    }, 
+    "YR05BE/URF_POLYNOMIAL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR05BE", 
+      "PARAMETER_TYPE_NAME": "URF_POLYNOMIAL", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 0
+    }, 
+    "YR05BE/URF_TIME_PARTITION": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR05BE", 
+      "PARAMETER_TYPE_NAME": "SCALAR_RF_TIME_PARTITION", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KH/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KH", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KH/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KH", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR06KH/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KH", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS1", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS1", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR06KS1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS1", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS1/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS1", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS2", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS2/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS2", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR06KS2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS2", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR06KS2/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR06KS2", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR07KV/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR07KV", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR07KV/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR07KV", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR07KV/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR07KV", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KH/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KH", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KH/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KH", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR08KH/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KH", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS1", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS1", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR08KS1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS1", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS1/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS1", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS2", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS2/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS2", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR08KS2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS2", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KS2/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KS2", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KV/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KV", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR08KV/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KV", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR08KV/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR08KV", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KH/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KH", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KH/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KH", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR10KH/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KH", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS1", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS1", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR10KS1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS1", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS1/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS1", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS2", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS2/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS2", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR10KS2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS2", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KS2/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KS2", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KV/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KV", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR10KV/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KV", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR10KV/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR10KV", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KH/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KH", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KH/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KH", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR12KH/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KH", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS1", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS1/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS1", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR12KS1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS1", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS1/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS1", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS2", 
+      "PARAMETER_TYPE_NAME": "B2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS2/DKL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS2", 
+      "PARAMETER_TYPE_NAME": "DK2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YR12KS2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS2", 
+      "PARAMETER_TYPE_NAME": "K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KS2/KLDELTA": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KS2", 
+      "PARAMETER_TYPE_NAME": "DELTA_K2L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KV/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KV", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YR12KV/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KV", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 4
+    }, 
+    "YR12KV/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YR12KV", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }
+  }, 
+  "PARAMETER_RELATIONS": {
+    "DEFAULT": {
+      "CRYRINGBEAM/A": {
+        "CRYRINGBEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/ALPHAC": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/ALPHADR": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/AOQ": {
+        "CRYRINGBEAM/A": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/BRHO": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/BRHODOT": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/BRHO_START_END": {
+        "CRYRINGBEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/BUNCHFACTOR": {
+        "CRYRINGBEAM/PHIS": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/CH": {
+        "CRYRINGBEAM/CH_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/CH_THEO": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TGRID": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TROUND": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/CH_THEO": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/CV": {
+        "CRYRINGBEAM/CV_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/CV_THEO": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TGRID": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TROUND": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/CV_THEO": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/DCH": {
+        "CRYRINGBEAM/CH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/CH_THEO": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/DCV": {
+        "CRYRINGBEAM/CV": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/CV_THEO": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/DELTAR": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/DQH": {
+        "CRYRINGBEAM/QH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/QH_THEO": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/DQV": {
+        "CRYRINGBEAM/QV": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/QV_THEO": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/EMIL": {
+        "CRYRINGBEAM/INJ_EMIL": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/ERHO": {
+        "CRYRINGBEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/ETA": {
+        "CRYRINGBEAM/ALPHAC": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/GAMMA": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/FREV": {
+        "CRYRINGBEAM/ALPHAC": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/ALPHADR": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DELTAR": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/GAMMA": {
+          "POSITION": 1
+        }
+      }, 
+      "CRYRINGBEAM/GAMMA": {
+        "CRYRINGBEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/GEOFACT": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/BRHO_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/INJ_EMIH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/INJ_EMIV": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/MAXRH": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/BRHO_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/INJ_EMIH": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/MAXRV": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/BRHO_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/INJ_EMIV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/NPERBUNCH": {
+        "CRYRINGBEAM/BUNCHPATTERN": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/H": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/NPARTICLES": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/PHIS": {
+        "CRYRINGBEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/BRHODOT": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/BUCKETFILL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/E": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/EMIL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/ETA": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/GAMMA": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/GEOFACT": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/H": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/NPERBUNCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/Q": {
+          "POSITION": null
+        }, 
+        "CRYRINGRF/DUALHIP": {
+          "POSITION": null
+        }, 
+        "CRYRINGRF/PHASE_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TGRID": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/QH": {
+        "CRYRINGBEAM/QH_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/QH_THEO": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TGRID": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TROUND": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/QH_THEO": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/QV": {
+        "CRYRINGBEAM/QV_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/QV_THEO": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TGRID": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TROUND": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/QV_THEO": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/TBUNCH": {
+        "CRYRINGBEAM/H": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/TREV": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGBEAM/TREV": {
+        "CRYRINGBEAM/FREV": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGOPTICS/OPTICSIP": {
+        "CRYRINGOPTICS/TAU_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGRF/ABKT": {
+        "CRYRINGBEAM/PHIS": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGRF/CAVITY2HARMONIC": {
+        "CRYRINGRF/MODE2D": {
+          "POSITION": null
+        }, 
+        "CRYRINGRF/URFRING": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGRF/DUALHIP": {
+        "CRYRINGRF/DUALH": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGRF/PRFRING": {
+        "CRYRINGBEAM/PHIS": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGRF/URFRING": {
+        "CRYRINGBEAM/PHIS": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGRF/URFSC": {
+        "CRYRINGBEAM/PHIS": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGTIMEPARAM/BP_LENGTH": {
+        "CRYRINGBEAM/BRHO_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/TAU_START_END": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/BDOT": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TGRID": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/TROUND": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/T_BP_LENGTH": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/T_WAIT": {
+          "POSITION": null
+        }
+      }, 
+      "CRYRINGTIMEPARAM/INCORPIP": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }
+      }, 
+      "YR00MH/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR00MH/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR00MH/DKL": {
+        "CRYRINGBEAM/ALPHADR": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DELTAR": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR00MH/I": {
+        "YR00MH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR00MH/I_POLYNOMIAL": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }, 
+        "YR00MH/I": {
+          "POSITION": null
+        }
+      }, 
+      "YR00MH/I_POLYNOMIAL_TEST": {
+        "YR00MH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR00MH/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR00MH/DKL": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS1/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR00QS1/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR00QS1/DKL": {
+        "CRYRINGBEAM/DQH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DQV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS1/I": {
+        "YR00QS1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS1/I_POLYNOMIAL": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }, 
+        "YR00QS1/I": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS1/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR00QS1/DKL": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS2/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR00QS2/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR00QS2/DKL": {
+        "CRYRINGBEAM/DQH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DQV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS2/I": {
+        "YR00QS2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS2/I_POLYNOMIAL": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }, 
+        "YR00QS2/I": {
+          "POSITION": null
+        }
+      }, 
+      "YR00QS2/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR00QS2/DKL": {
+          "POSITION": null
+        }
+      }, 
+      "YR01LB/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR01LB/U": {
+        "CRYRINGBEAM/ERHO": {
+          "POSITION": null
+        }, 
+        "YR01LB/KL": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KD/BLCORR": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR02KD/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR02KD/ICORR": {
+        "YR00MH/BL": {
+          "POSITION": null
+        }, 
+        "YR00MH/I": {
+          "POSITION": null
+        }, 
+        "YR02KD/BLCORR": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KD/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KH/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR02KH/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR02KH/I": {
+        "YR02KH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KH/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS1/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR02KS1/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR02KS1/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS1/I": {
+        "YR02KS1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS1/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR02KS1/DKL": {
+          "POSITION": null
+        }, 
+        "YR02KS1/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS1/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS2/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR02KS2/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR02KS2/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS2/I": {
+        "YR02KS2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS2/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR02KS2/DKL": {
+          "POSITION": null
+        }, 
+        "YR02KS2/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KS2/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KV/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR02KV/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR02KV/I": {
+        "YR02KV/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR02KV/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KH/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR04KH/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR04KH/I": {
+        "YR04KH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KH/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS1/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR04KS1/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR04KS1/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS1/I": {
+        "YR04KS1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS1/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR04KS1/DKL": {
+          "POSITION": null
+        }, 
+        "YR04KS1/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS1/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS2/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR04KS2/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR04KS2/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS2/I": {
+        "YR04KS2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS2/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR04KS2/DKL": {
+          "POSITION": null
+        }, 
+        "YR04KS2/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KS2/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KV/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR04KV/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR04KV/I": {
+        "YR04KV/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR04KV/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR05BE/FRF": {
+        "CRYRINGBEAM/FREV": {
+          "POSITION": 1
+        }, 
+        "CRYRINGRF/CAVITY2HARMONIC": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR05BE/FRF_POLYNOMIAL": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }, 
+        "YR05BE/FRF": {
+          "POSITION": null
+        }
+      }, 
+      "YR05BE/PRF": {
+        "CRYRINGRF/CAVITY2HARMONIC": {
+          "POSITION": 1
+        }, 
+        "CRYRINGRF/PRFRING": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR05BE/URF": {
+        "CRYRINGRF/CAVITY2HARMONIC": {
+          "POSITION": 1
+        }, 
+        "CRYRINGRF/URFRING": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR05BE/URF_POLYNOMIAL": {
+        "CRYRINGTIMEPARAM/BP_LENGTH": {
+          "POSITION": null
+        }, 
+        "YR05BE/URF": {
+          "POSITION": null
+        }, 
+        "YR05BE/URF_TIME_PARTITION": {
+          "POSITION": null
+        }
+      }, 
+      "YR05BE/URF_TIME_PARTITION": {
+        "YR05BE/URF": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KH/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR06KH/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR06KH/I": {
+        "YR06KH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KH/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS1/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR06KS1/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR06KS1/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS1/I": {
+        "YR06KS1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS1/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR06KS1/DKL": {
+          "POSITION": null
+        }, 
+        "YR06KS1/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS1/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS2/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR06KS2/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR06KS2/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS2/I": {
+        "YR06KS2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS2/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR06KS2/DKL": {
+          "POSITION": null
+        }, 
+        "YR06KS2/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR06KS2/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR07KV/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR07KV/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR07KV/I": {
+        "YR07KV/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR07KV/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KH/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR08KH/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR08KH/I": {
+        "YR08KH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KH/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS1/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR08KS1/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR08KS1/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS1/I": {
+        "YR08KS1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS1/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR08KS1/DKL": {
+          "POSITION": null
+        }, 
+        "YR08KS1/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS1/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS2/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR08KS2/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR08KS2/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS2/I": {
+        "YR08KS2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS2/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR08KS2/DKL": {
+          "POSITION": null
+        }, 
+        "YR08KS2/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KS2/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KV/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR08KV/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR08KV/I": {
+        "YR08KV/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR08KV/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KH/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR10KH/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR10KH/I": {
+        "YR10KH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KH/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS1/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR10KS1/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR10KS1/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS1/I": {
+        "YR10KS1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS1/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR10KS1/DKL": {
+          "POSITION": null
+        }, 
+        "YR10KS1/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS1/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS2/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR10KS2/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR10KS2/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS2/I": {
+        "YR10KS2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS2/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR10KS2/DKL": {
+          "POSITION": null
+        }, 
+        "YR10KS2/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KS2/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KV/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR10KV/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR10KV/I": {
+        "YR10KV/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR10KV/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KH/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR12KH/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR12KH/I": {
+        "YR12KH/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KH/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS1/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR12KS1/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR12KS1/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS1/I": {
+        "YR12KS1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS1/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR12KS1/DKL": {
+          "POSITION": null
+        }, 
+        "YR12KS1/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS1/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS2/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR12KS2/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR12KS2/DKL": {
+        "CRYRINGBEAM/DCH": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/DCV": {
+          "POSITION": null
+        }, 
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS2/I": {
+        "YR12KS2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS2/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }, 
+        "YR12KS2/DKL": {
+          "POSITION": null
+        }, 
+        "YR12KS2/KLDELTA": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KS2/KLDELTA": {
+        "CRYRINGBEAM/KL_AMPL": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_HARM": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_OFFSET": {
+          "POSITION": null
+        }, 
+        "CRYRINGBEAM/KL_PHASE": {
+          "POSITION": null
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KV/BL": {
+        "CRYRINGBEAM/BRHO": {
+          "POSITION": 1
+        }, 
+        "CRYRINGTIMEPARAM/INCORPIP": {
+          "POSITION": null
+        }, 
+        "YR12KV/KL": {
+          "POSITION": 1
+        }
+      }, 
+      "YR12KV/I": {
+        "YR12KV/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YR12KV/KL": {
+        "CRYRINGOPTICS/OPTICSIP": {
+          "POSITION": null
+        }
+      }
+    }
+  }, 
+  "SYSTEM_CONFIGS": {
+    "CRYRINGBEAM/A": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/ALPHAC": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/ALPHADR": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/BRHODOT": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/BRHO_START_END": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/BUCKETFILL": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/BUNCHFACTOR": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/BUNCHPATTERN": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/CH": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/CH_START_END": {
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/CH_THEO": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/CV": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/CV_START_END": {
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/CV_THEO": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/DCH": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/DCV": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/DELTAR": {
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/DQH": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/DQV": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/EMIL": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/ETA": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/FREV": {
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/GAMMA": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/GEOFACT": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/H": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/INJ_EMIH": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/INJ_EMIL": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/INJ_EMIV": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/KL_AMPL": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/KL_HARM": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/KL_OFFSET": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/KL_PHASE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/MAXRH": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/MAXRV": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/NPARTICLES": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/NPERBUNCH": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/PHIS": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/QH": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/QH_START_END": {
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/QH_THEO": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/QV": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/QV_START_END": {
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGBEAM/QV_THEO": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/TBUNCH": {
+      "BEAM": {}
+    }, 
+    "CRYRINGBEAM/TREV": {
+      "BEAM": {}
+    }, 
+    "CRYRINGIKICKER/KNOB": {
+      "KICKER": {}
+    }, 
+    "CRYRINGOPTICS/OPTICSIP": {
+      "OPTICS": {}
+    }, 
+    "CRYRINGOPTICS/TAU_START_END": {
+      "-TOPLEVEL": {}, 
+      "OPTICS": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGRF/ABKT": {
+      "RF": {}
+    }, 
+    "CRYRINGRF/CAVITY2HARMONIC": {
+      "RF": {}
+    }, 
+    "CRYRINGRF/DUALH": {
+      "-TOPLEVEL": {}, 
+      "RF": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGRF/DUALHIP": {
+      "RF": {}
+    }, 
+    "CRYRINGRF/MODE2D": {
+      "-TOPLEVEL": {}, 
+      "RF": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGRF/PHASE_OFFSET": {
+      "-TOPLEVEL": {}, 
+      "RF": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGRF/PRFRING": {
+      "RF": {}
+    }, 
+    "CRYRINGRF/URFRING": {
+      "RF": {}
+    }, 
+    "CRYRINGRF/URFSC": {
+      "RF": {}
+    }, 
+    "CRYRINGTIMEPARAM/BDOT": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGTIMEPARAM/BP_LENGTH": {
+      "TIMEPARAM": {}
+    }, 
+    "CRYRINGTIMEPARAM/INCORPIP": {
+      "TIMEPARAM": {}
+    }, 
+    "CRYRINGTIMEPARAM/TGRID": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGTIMEPARAM/TROUND": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGTIMEPARAM/T_BP_LENGTH": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "CRYRINGTIMEPARAM/T_WAIT": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "YR00MH/BL": {
+      "DIPOLE": {}
+    }, 
+    "YR00MH/DKL": {
+      "DIPOLE": {}
+    }, 
+    "YR00MH/I": {
+      "DIPOLE": {}
+    }, 
+    "YR00MH/I_POLYNOMIAL": {
+      "DIPOLE": {}
+    }, 
+    "YR00MH/I_POLYNOMIAL_TEST": {
+      "DIPOLE": {}
+    }, 
+    "YR00MH/KL": {
+      "DIPOLE": {}
+    }, 
+    "YR00QS1/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS1/DKL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS1/I": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS1/I_POLYNOMIAL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS1/KL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS2/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS2/DKL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS2/I": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS2/I_POLYNOMIAL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR00QS2/KL": {
+      "QUADRUPOLE": {}
+    }, 
+    "YR01LB/KL": {
+      "BUMPER": {}
+    }, 
+    "YR01LB/TFALL": {
+      "-TOPLEVEL": {}, 
+      "BUMPER": {}, 
+      "generation": {}
+    }, 
+    "YR01LB/U": {
+      "BUMPER": {}
+    }, 
+    "YR02KD/BLCORR": {
+      "CORRH": {}
+    }, 
+    "YR02KD/ICORR": {
+      "CORRH": {}
+    }, 
+    "YR02KD/KL": {
+      "CORRH": {}
+    }, 
+    "YR02KH/BL": {
+      "CORRH": {}
+    }, 
+    "YR02KH/I": {
+      "CORRH": {}
+    }, 
+    "YR02KH/KL": {
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YR02KS1/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS1/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS1/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS1/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS1/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS2/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS2/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS2/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS2/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KS2/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR02KV/BL": {
+      "CORRV": {}
+    }, 
+    "YR02KV/I": {
+      "CORRV": {}
+    }, 
+    "YR02KV/KL": {
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "YR02MK1/BL": {
+      "KICKER": {}
+    }, 
+    "YR02MK1/DKL": {
+      "KICKER": {}
+    }, 
+    "YR02MK1/KL": {
+      "KICKER": {}
+    }, 
+    "YR02MK1/UKICK": {
+      "KICKER": {}
+    }, 
+    "YR04KH/BL": {
+      "CORRH": {}
+    }, 
+    "YR04KH/I": {
+      "CORRH": {}
+    }, 
+    "YR04KH/KL": {
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YR04KS1/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS1/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS1/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS1/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS1/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS2/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS2/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS2/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS2/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KS2/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR04KV/BL": {
+      "CORRV": {}
+    }, 
+    "YR04KV/I": {
+      "CORRV": {}
+    }, 
+    "YR04KV/KL": {
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "YR05BE/FRF": {
+      "RF": {}
+    }, 
+    "YR05BE/FRF_POLYNOMIAL": {
+      "RF": {}
+    }, 
+    "YR05BE/PRF": {
+      "RF": {}
+    }, 
+    "YR05BE/URF": {
+      "RF": {}
+    }, 
+    "YR05BE/URF_POLYNOMIAL": {
+      "RF": {}
+    }, 
+    "YR05BE/URF_TIME_PARTITION": {
+      "RF": {}
+    }, 
+    "YR06KH/BL": {
+      "CORRH": {}
+    }, 
+    "YR06KH/I": {
+      "CORRH": {}
+    }, 
+    "YR06KH/KL": {
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YR06KS1/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS1/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS1/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS1/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS1/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS2/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS2/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS2/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS2/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR06KS2/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR07KV/BL": {
+      "CORRV": {}
+    }, 
+    "YR07KV/I": {
+      "CORRV": {}
+    }, 
+    "YR07KV/KL": {
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "YR08KH/BL": {
+      "CORRH": {}
+    }, 
+    "YR08KH/I": {
+      "CORRH": {}
+    }, 
+    "YR08KH/KL": {
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YR08KS1/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS1/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS1/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS1/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS1/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS2/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS2/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS2/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS2/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KS2/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR08KV/BL": {
+      "CORRV": {}
+    }, 
+    "YR08KV/I": {
+      "CORRV": {}
+    }, 
+    "YR08KV/KL": {
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "YR10KH/BL": {
+      "CORRH": {}
+    }, 
+    "YR10KH/I": {
+      "CORRH": {}
+    }, 
+    "YR10KH/KL": {
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YR10KS1/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS1/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS1/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS1/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS1/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS2/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS2/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS2/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS2/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KS2/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR10KV/BL": {
+      "CORRV": {}
+    }, 
+    "YR10KV/I": {
+      "CORRV": {}
+    }, 
+    "YR10KV/KL": {
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "YR12KH/BL": {
+      "CORRH": {}
+    }, 
+    "YR12KH/I": {
+      "CORRH": {}
+    }, 
+    "YR12KH/KL": {
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YR12KS1/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS1/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS1/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS1/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS1/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS2/BL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS2/DKL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS2/I": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS2/KL": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KS2/KLDELTA": {
+      "SEXTUPOLE": {}
+    }, 
+    "YR12KV/BL": {
+      "CORRV": {}
+    }, 
+    "YR12KV/I": {
+      "CORRV": {}
+    }, 
+    "YR12KV/KL": {
+      "CORRV": {}, 
+      "generation": {}
+    }
+  }
+}

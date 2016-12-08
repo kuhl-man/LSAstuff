@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devicedata>
+
+  <comment>
+    The data of the devices are collected in this file
+  </comment>
+
+  <system name="SIS18_python">
+
+    <device name="GS06MU2A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS08KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS03KS3C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-3.563323594852991"/>
+
+      <!-- maximum integral field -->
+      <blmax value="14.253594379411965"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-3.563423594852991" b1="14.253694379411964" />
+        <polynomial a0="0.0" a1="28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS05KS1C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-14.253594379411965"/>
+
+      <!-- maximum integral field -->
+      <blmax value="3.563323594852991"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-14.253694379411964" b1="3.563423594852991" />
+        <polynomial a0="0.0" a1="-28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS06MU4" group="BYPASS">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="180.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-3.6357193366093474"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="LINEAR_TEST">
+        <boundaries b0="-3.6358193366093476" b1="-0.0" />
+        <polynomial a0="0.0" a1="-962.644090909091" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS08KQ4" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-370.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="370.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.1359044109538688"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.1359044109538688"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.13600441095386878" b1="0.13600441095386878" />
+        <polynomial a0="0.0" a1="-2720.5" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS04KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS05MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS01MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS03KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS07MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS03MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS01KS1C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-14.253594379411965"/>
+
+      <!-- maximum integral field -->
+      <blmax value="3.563323594852991"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-14.253694379411964" b1="3.563423594852991" />
+        <polynomial a0="0.0" a1="-28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS11KS3C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-3.563323594852991"/>
+
+      <!-- maximum integral field -->
+      <blmax value="14.253594379411965"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-3.563423594852991" b1="14.253694379411964" />
+        <polynomial a0="0.0" a1="28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS02MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS07KS3C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-3.563323594852991"/>
+
+      <!-- maximum integral field -->
+      <blmax value="14.253594379411965"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-3.563423594852991" b1="14.253694379411964" />
+        <polynomial a0="0.0" a1="28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12QS2D" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="1760.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="10.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="1760.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-9.087622513564613"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-0.06439073484477463"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.067"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-9.087722513564659" b1="-0.011942152505080803" />
+        <polynomial a0="-2.2819400000016685" a1="-191.09300000000218" a2="-0.8513410000001649" a3="0.19793499999997977" a4="0.12100899999999873" a5="0.015164499999999996" a6="3.705750000000026E-5" a7="-6.608119999999998E-5" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="800.0" b2="1300.0" b3="1775.7894736842106" />
+        <polynomial a0="0.09" />
+        <polynomial a0="0.083088" a1="1.7280000000000018E-5" a2="-1.080000000000001E-8" />
+        <polynomial a0="-0.03149591682419653" a1="1.9356294896030233E-4" a2="-7.86011342155009E-8" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS05KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS06MU1A" group="CORRECTIONCOILFLAT">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS10MU1A" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS08KM5SS" group="SKEWSEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-6.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="6.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.059899999999999995"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.059899999999999995"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.06" b1="0.06" />
+        <polynomial a0="0.0" a1="100.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS02KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS07KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS05MU2A" group="CORRECTIONCOILFLAT">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS07MU2A" group="CORRECTIONCOILFLAT">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12MB2" group="BUMPER">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.03563572715057606"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="0.03573572715057606" />
+        <polynomial a0="0.0" a1="139916.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS11MU2" group="DIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="80.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="3500.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="80.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="3500.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.003"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.312"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-12000.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="12000.0"/>
+
+      <!-- maximum slope dI/dt [A/s] -->
+      <idotmax value="8300.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.11764189471497762"/>
+
+      <!-- maximum integral field -->
+      <blmax value="4.8977148861695206"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.228"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.58" />
+        <polynomial a0="0.5578784580498866" a1="3.0512471655328816E-5" a2="-1.0521541950113385E-8" />
+        <polynomial a0="4.833333333333911E-4" a1="4.764285714285713E-4" a2="-9.970476190476187E-8" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12QS3T" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="820.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="10.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="820.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0016"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0705"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-650.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="650.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.029386902941012063"/>
+
+      <!-- maximum integral field -->
+      <blmax value="2.002345812383686"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.084"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.005479063777168722" b1="2.0024458123836864" />
+        <polynomial a0="-2.306600000000461" a1="421.173300000001" a2="-34.85544000000061" a3="67.24744000000018" a4="-75.45045000000006" a5="46.497190000000025" a6="-14.592180000000006" a7="1.82497" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="350.0" b2="835.7894736842105" />
+        <polynomial a0="0.0845" />
+        <polynomial a0="0.08370338954277955" a1="4.5520597555455E-6" a2="-6.502942507922143E-9" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GTK9MB1V" group="BUMPER">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="3000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.021341436290345638"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="0.021441436290345638" />
+        <polynomial a0="0.0" a1="139916.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS09KS3C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-3.563323594852991"/>
+
+      <!-- maximum integral field -->
+      <blmax value="14.253594379411965"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-3.563423594852991" b1="14.253694379411964" />
+        <polynomial a0="0.0" a1="28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS01KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS10KQ4" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-370.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="370.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.1359044109538688"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.1359044109538688"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.13600441095386878" b1="0.13600441095386878" />
+        <polynomial a0="0.0" a1="-2720.5" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS01BO1EH" group="KOEXTRACTION">
+
+      <!-- minimum voltage [V] -->
+      <umin value="0.0"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="700.0"/>
+
+    </device>
+
+
+    <device name="GS11KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.021344501629782124"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.021344501629782124"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.021444501629782124" b1="0.021444501629782124" />
+        <polynomial a0="0.0" a1="-2331.6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS10KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS11MB1" group="BUMPER">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.03563572715057606"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="0.03573572715057606" />
+        <polynomial a0="0.0" a1="139916.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS04MU1A" group="CORRECTIONCOILFLAT">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS11MU1A" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS05KS3C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-3.563323594852991"/>
+
+      <!-- maximum integral field -->
+      <blmax value="14.253594379411965"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-3.563423594852991" b1="14.253694379411964" />
+        <polynomial a0="0.0" a1="28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS02KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS02KQ4" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-370.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="370.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.1359044109538688"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.1359044109538688"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.13600441095386878" b1="0.13600441095386878" />
+        <polynomial a0="0.0" a1="-2720.5" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS06KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS03KS1C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-14.253594379411965"/>
+
+      <!-- maximum integral field -->
+      <blmax value="3.563323594852991"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-14.253694379411964" b1="3.563423594852991" />
+        <polynomial a0="0.0" a1="-28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS01QS1F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="1760.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="10.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="1760.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.001"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.1568"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.06462854066773278"/>
+
+      <!-- maximum integral field -->
+      <blmax value="9.127580761851508"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.075"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.011942139198857062" b1="9.12768076185148" />
+        <polynomial a0="-2.271619999997591" a1="190.2289999999987" a2="-0.8474899999998489" a3="-0.1970400000000122" a4="0.12046199999999979" a5="-0.015126199999999985" a6="3.688979999999963E-5" a7="6.578229999999997E-5" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="800.0" b2="1300.0" b3="1775.7894736842106" />
+        <polynomial a0="0.105" />
+        <polynomial a0="0.096936" a1="2.016000000000002E-5" a2="-1.2600000000000012E-8" />
+        <polynomial a0="-0.036745236294895955" a1="2.2582344045368608E-4" a2="-9.170132325141772E-8" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS10MU2A" group="CORRECTIONCOILFLAT">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS02KM5SS" group="SKEWSEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-6.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="6.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.059899999999999995"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.059899999999999995"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.06" b1="0.06" />
+        <polynomial a0="0.0" a1="100.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS07BE3F" group="RFCAVITY">
+
+      <!-- minimum frequency [Hz] -->
+      <fmin value="400000.0"/>
+
+      <!-- maximum frequency [Hz] -->
+      <fmax value="2800000.0"/>
+
+    </device>
+
+
+    <device name="GS10KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS04KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS11KS1C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-14.253594379411965"/>
+
+      <!-- maximum integral field -->
+      <blmax value="3.563323594852991"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-14.253694379411964" b1="3.563423594852991" />
+        <polynomial a0="0.0" a1="-28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GTK7BC1L" group="HEBT_CHOPPER">
+
+      <!-- minimum current [A] -->
+      <imin value="3000.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="35000.0"/>
+
+    </device>
+
+
+    <device name="GS11MU2A" group="CORRECTIONCOILFLAT">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS01KS3C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-3.563323594852991"/>
+
+      <!-- maximum integral field -->
+      <blmax value="14.253594379411965"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-3.563423594852991" b1="14.253694379411964" />
+        <polynomial a0="0.0" a1="28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS02BE1A" group="RFCAVITY">
+
+      <!-- minimum voltage [V] -->
+      <umin value="4.9"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="14000.0"/>
+
+    </device>
+
+
+    <device name="GS01MB3" group="BUMPER">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.03563572715057606"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="0.03573572715057606" />
+        <polynomial a0="0.0" a1="139916.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS07KS1C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-14.253594379411965"/>
+
+      <!-- maximum integral field -->
+      <blmax value="3.563323594852991"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-14.253694379411964" b1="3.563423594852991" />
+        <polynomial a0="0.0" a1="-28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS03MB4" group="BUMPER">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.03563572715057606"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="0.03573572715057606" />
+        <polynomial a0="0.0" a1="139916.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS07BE3A" group="RFCAVITY">
+
+      <!-- minimum voltage [V] -->
+      <umin value="4.9"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="8000.0"/>
+
+    </device>
+
+
+    <device name="GS01KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS02BE1F" group="RFCAVITY">
+
+      <!-- minimum frequency [Hz] -->
+      <fmin value="800000.0"/>
+
+      <!-- maximum frequency [Hz] -->
+      <fmax value="5500000.0"/>
+
+    </device>
+
+
+    <device name="GS05MK2E" group="KICKER">
+
+      <!-- minimum voltage [V] -->
+      <umin value="50000.0"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="319999.2"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.04064844900828214"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-0.006466961074946772"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for U = U(B*L) -->
+      <calibration type="MAG_INTFIELD2VOLTAGE" xunit="Tm" yunit="V" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.040748449008282145" b1="-0.006366961074946772" />
+        <polynomial a0="0.0" a1="-7853039.999999999" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12MU2A" group="CORRECTIONCOILFLAT">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS08BE2F" group="RFCAVITY">
+
+      <!-- minimum frequency [Hz] -->
+      <fmin value="800000.0"/>
+
+      <!-- maximum frequency [Hz] -->
+      <fmax value="5500000.0"/>
+
+    </device>
+
+
+    <device name="GS07KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS08BE2A" group="RFCAVITY">
+
+      <!-- minimum voltage [V] -->
+      <umin value="4.9"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="14000.0"/>
+
+    </device>
+
+
+    <device name="GS02KQ1E" group="EXTRQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="150.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.12471589655258494"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.12481589655258495" b1="0.0" />
+        <polynomial a0="0.0" a1="-1201.77" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS08MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS06KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS04MK1E" group="KICKER">
+
+      <!-- minimum voltage [V] -->
+      <umin value="50000.0"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="399999.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.006466961074946772"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.05083556126035268"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for U = U(B*L) -->
+      <calibration type="MAG_INTFIELD2VOLTAGE" xunit="Tm" yunit="V" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.006366961074946772" b1="0.05093556126035268" />
+        <polynomial a0="7.275957614183426E-12" a1="7853039.999999999" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS01QS2D" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="1760.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="10.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="1760.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-9.087622513564613"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-0.06439073484477463"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.064"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-9.087722513564659" b1="-0.011942152505080803" />
+        <polynomial a0="-2.2819400000016685" a1="-191.09300000000218" a2="-0.8513410000001649" a3="0.19793499999997977" a4="0.12100899999999873" a5="0.015164499999999996" a6="3.705750000000026E-5" a7="-6.608119999999998E-5" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="800.0" b2="1300.0" b3="1775.7894736842106" />
+        <polynomial a0="0.09" />
+        <polynomial a0="0.083088" a1="1.7280000000000018E-5" a2="-1.080000000000001E-8" />
+        <polynomial a0="-0.02430782608695646" a1="1.8250434782608683E-4" a2="-7.434782608695648E-8" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS09MU1A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS09KM2DV" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="50.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.027216433566433565"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.027216433566433565"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.027316433566433564" b1="0.027316433566433564" />
+        <polynomial a0="0.0" a1="-1830.4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS04KQ4" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-370.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="370.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.1359044109538688"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.1359044109538688"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.13600441095386878" b1="0.13600441095386878" />
+        <polynomial a0="0.0" a1="-2720.5" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS04MU2A" group="CORRECTIONCOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-60.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="60.0"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-150.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="150.0"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.411"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0055" />
+        <polynomial a0="0.005290226757369614" a1="2.893424036281181E-7" a2="-9.977324263038555E-11" />
+        <polynomial a0="4.583333333335604E-6" a1="4.517857142857141E-6" a2="-9.454761904761902E-10" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.003513475630967967" b1="4.9149836825253574" />
+        <polynomial a0="-2.4679599999999997" a1="702.4541419912761" a2="-7.753872388058462" a3="4.80562314853478" a4="-2.8006352265872025" a5="1.2780846507797976" a6="-0.31217757458926493" a7="0.029612909213202844" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="1450.0" b2="2500.0" b3="3515.7894736842104" />
+        <polynomial a0="0.0014" />
+        <polynomial a0="0.0013466031746031746" a1="7.36507936507937E-8" a2="-2.5396825396825414E-11" />
+        <polynomial a0="1.1666666666671106E-6" a1="1.1499999999999996E-6" a2="-2.406666666666666E-10" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS08KM3QS" group="SKEWQUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.16690066800267203"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.16690066800267203"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.16700066800267202" b1="0.16700066800267202" />
+        <polynomial a0="0.0" a1="2395.2" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS09KS1C" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-100.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-14.253594379411965"/>
+
+      <!-- maximum integral field -->
+      <blmax value="3.563323594852991"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-14.253694379411964" b1="3.563423594852991" />
+        <polynomial a0="0.0" a1="-28.0629" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12QS1F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="1760.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="10.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="1760.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.06462854066773278"/>
+
+      <!-- maximum integral field -->
+      <blmax value="9.127580761851508"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.066"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.011942139198857062" b1="9.12768076185148" />
+        <polynomial a0="-2.271619999997591" a1="190.2289999999987" a2="-0.8474899999998489" a3="-0.1970400000000122" a4="0.12046199999999979" a5="-0.015126199999999985" a6="3.688979999999963E-5" a7="6.578229999999997E-5" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.0" b1="800.0" b2="1300.0" b3="1775.7894736842106" />
+        <polynomial a0="0.0915" />
+        <polynomial a0="0.08447279999999999" a1="1.756800000000002E-5" a2="-1.0980000000000011E-8" />
+        <polynomial a0="-0.03202084877126646" a1="1.9678899810964071E-4" a2="-7.991115311909259E-8" />
+      </calibration>
+
+    </device>
+
+
+    <device name="GS12ME1I" group="HEBT_SEPTUM">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="200000.0"/>
+
+    </device>
+
+
+    <device name="GS04ME1E" group="HEBT_SEPTUM">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160000.0"/>
+
+    </device>
+
+
+  </system>
+
+</devicedata>

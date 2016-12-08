@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devicedata>
+
+  <comment>
+	dummy device data
+  </comment>
+
+  <system name="DUMMY_python">
+  
+    <device name="DUMMY" group="DUMMY">
+
+    </device>
+  
+  </system>
+
+</devicedata>
+    

@@ -1,0 +1,1059 @@
+{
+  "DEVICES": {
+    "TEY1_BEAM": {
+      "ACCELERATOR_ZONE": "TEY1", 
+      "DESCRIPTION": "TEY1_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "TEY1_OPTICS": {
+      "ACCELERATOR_ZONE": "TEY1", 
+      "DESCRIPTION": "TEY1_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "OPTICS", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "TEY1_TIMEPARAM": {
+      "ACCELERATOR_ZONE": "TEY1", 
+      "DESCRIPTION": "TEY1_TIMEPARAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "TIMEPARAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }
+  }, 
+  "HIERARCHY_DETAILS": {
+    "ACCELERATOR": "CRYRING", 
+    "PARTICLE_TRANSFER": "TEY1", 
+    "VERSION_NUMBER": "1.0.0"
+  }, 
+  "LINKRULES_CONFIGS": {
+    "GHTYDC2": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYDF2": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYKH2": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYKV2": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYMH2": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYQD21": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYQD22": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYQD31": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHTYQD32": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }
+  }, 
+  "PARAMETERS_HARDWARE": {}, 
+  "PARAMETERS_PHYSICS": {
+    "GHTYDC2/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "GHTYDC2/GAIN": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TAU_NLP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "GHTYDC2/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHTYDC2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "GHTYDC2/TIME_OF_FLIGHT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIME_OF_FLIGHT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHTYDF2/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "GHTYDF2/GAIN": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TAU_NLP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "GHTYDF2/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHTYDF2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "GHTYDF2/TIME_OF_FLIGHT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYDF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIME_OF_FLIGHT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHTYKH2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKH2", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYKH2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKH2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYKH2/I#": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKH2", 
+      "PARAMETER_TYPE_NAME": "HVPowerSupply/Setting#current", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYKH2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKH2", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYKV2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKV2", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYKV2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKV2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYKV2/I#": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKV2", 
+      "PARAMETER_TYPE_NAME": "HVPowerSupply/Setting#current", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYKV2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYKV2", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYMH2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYMH2", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYMH2/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYMH2", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYMH2/I#": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYMH2", 
+      "PARAMETER_TYPE_NAME": "HVPowerSupply/Setting#current", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYMH2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYMH2", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD21/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD21", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD21/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD21", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD21/I#": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD21", 
+      "PARAMETER_TYPE_NAME": "HVPowerSupply/Setting#current", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD21/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD21", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD22/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD22", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD22/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD22", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD22/I#": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD22", 
+      "PARAMETER_TYPE_NAME": "HVPowerSupply/Setting#current", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD22/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD22", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD31/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD31", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD31/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD31", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD31/I#": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD31", 
+      "PARAMETER_TYPE_NAME": "HVPowerSupply/Setting#current", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD31/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD31", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD32/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD32", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "GHTYQD32/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD32", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD32/I#": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD32", 
+      "PARAMETER_TYPE_NAME": "HVPowerSupply/Setting#current", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "GHTYQD32/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHTYQD32", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "TEY1_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/BRHO_START_END": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_HEBT_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/EARRAY": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_TIMEPARAM/TIMING_MASTER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_MASTER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_TIMEPARAM/T_BI_DELAY": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_BI_DELAY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_TIMEPARAM/T_BI_WINDOW": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_BI_WINDOW", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_TIMEPARAM/T_PROCESS_KEY": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_PROCESS_KEY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_TIMEPARAM/T_PULSE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_BEAM_PULSE_LENGTH", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TEY1_TIMEPARAM/T_SEQUENCE_KEY": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TEY1_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_SEQUENCE_KEY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }
+  }, 
+  "PARAMETER_RELATIONS": {
+    "DEFAULT": {
+      "GHTYDC2/CHOPPED_BEAM": {
+        "TEY1_BEAM/CHOPPED_BEAM": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYDC2/Q": {
+        "TEY1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYDC2/TIME_OF_FLIGHT": {
+        "TEY1_BEAM/EARRAY": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYDF2/CHOPPED_BEAM": {
+        "TEY1_BEAM/CHOPPED_BEAM": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYDF2/Q": {
+        "TEY1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYDF2/TIME_OF_FLIGHT": {
+        "TEY1_BEAM/EARRAY": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYKH2/BL": {
+        "GHTYKH2/KL": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYKH2/I": {
+        "GHTYKH2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYKH2/I#": {
+        "GHTYKH2/I": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYKV2/BL": {
+        "GHTYKV2/KL": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYKV2/I": {
+        "GHTYKV2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYKV2/I#": {
+        "GHTYKV2/I": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYMH2/BL": {
+        "GHTYMH2/KL": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYMH2/I": {
+        "GHTYMH2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYMH2/I#": {
+        "GHTYMH2/I": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD21/BL": {
+        "GHTYQD21/KL": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD21/I": {
+        "GHTYQD21/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD21/I#": {
+        "GHTYQD21/I": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD22/BL": {
+        "GHTYQD22/KL": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD22/I": {
+        "GHTYQD22/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD22/I#": {
+        "GHTYQD22/I": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD31/BL": {
+        "GHTYQD31/KL": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD31/I": {
+        "GHTYQD31/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD31/I#": {
+        "GHTYQD31/I": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD32/BL": {
+        "GHTYQD32/KL": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD32/I": {
+        "GHTYQD32/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHTYQD32/I#": {
+        "GHTYQD32/I": {
+          "POSITION": null
+        }
+      }, 
+      "TEY1_BEAM/A": {
+        "TEY1_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "TEY1_BEAM/AOQ": {
+        "TEY1_BEAM/A": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "TEY1_BEAM/BRHO": {
+        "TEY1_BEAM/BRHO_START_END": {
+          "POSITION": null
+        }
+      }, 
+      "TEY1_BEAM/BRHO_START_END": {
+        "TEY1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/EARRAY": {
+          "POSITION": null
+        }
+      }, 
+      "TEY1_BEAM/EARRAY": {
+        "TEY1_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "TEY1_BEAM/ERHO": {
+        "TEY1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "TEY1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "TEY1_TIMEPARAM/TIMING_MASTER": {
+        "TEY1_TIMEPARAM/T_BI_DELAY": {
+          "POSITION": null
+        }, 
+        "TEY1_TIMEPARAM/T_BI_WINDOW": {
+          "POSITION": null
+        }, 
+        "TEY1_TIMEPARAM/T_PROCESS_KEY": {
+          "POSITION": null
+        }, 
+        "TEY1_TIMEPARAM/T_PULSE": {
+          "POSITION": null
+        }, 
+        "TEY1_TIMEPARAM/T_SEQUENCE_KEY": {
+          "POSITION": null
+        }
+      }
+    }
+  }, 
+  "SYSTEM_CONFIGS": {
+    "GHTYDC2/CHOPPED_BEAM": {
+      "FARADAY_CUP": {}
+    }, 
+    "GHTYDC2/GAIN": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "GHTYDC2/Q": {
+      "FARADAY_CUP": {}
+    }, 
+    "GHTYDC2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "GHTYDC2/TIME_OF_FLIGHT": {
+      "FARADAY_CUP": {}
+    }, 
+    "GHTYDF2/CHOPPED_BEAM": {
+      "FARADAY_CUP": {}
+    }, 
+    "GHTYDF2/GAIN": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "GHTYDF2/Q": {
+      "FARADAY_CUP": {}
+    }, 
+    "GHTYDF2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "GHTYDF2/TIME_OF_FLIGHT": {
+      "FARADAY_CUP": {}
+    }, 
+    "GHTYKH2/BL": {
+      "CORRH": {}
+    }, 
+    "GHTYKH2/I": {
+      "CORRH": {}
+    }, 
+    "GHTYKH2/I#": {
+      "CORRH": {}
+    }, 
+    "GHTYKH2/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "GHTYKV2/BL": {
+      "CORRV": {}
+    }, 
+    "GHTYKV2/I": {
+      "CORRV": {}
+    }, 
+    "GHTYKV2/I#": {
+      "CORRV": {}
+    }, 
+    "GHTYKV2/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "GHTYMH2/BL": {
+      "DIPOLE": {}
+    }, 
+    "GHTYMH2/I": {
+      "DIPOLE": {}
+    }, 
+    "GHTYMH2/I#": {
+      "DIPOLE": {}
+    }, 
+    "GHTYMH2/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHTYQD21/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD21/I": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD21/I#": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD21/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHTYQD22/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD22/I": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD22/I#": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD22/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHTYQD31/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD31/I": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD31/I#": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD31/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHTYQD32/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD32/I": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD32/I#": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHTYQD32/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "TEY1_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "TEY1_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "TEY1_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "TEY1_BEAM/BRHO_START_END": {
+      "BEAM": {}
+    }, 
+    "TEY1_BEAM/CHOPPED_BEAM": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_BEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_BEAM/EARRAY": {
+      "BEAM": {}
+    }, 
+    "TEY1_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "TEY1_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_TIMEPARAM/TIMING_MASTER": {
+      "TIMEPARAM": {}
+    }, 
+    "TEY1_TIMEPARAM/T_BI_DELAY": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_TIMEPARAM/T_BI_WINDOW": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_TIMEPARAM/T_PROCESS_KEY": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "TEY1_TIMEPARAM/T_PULSE": {
+      "TIMEPARAM": {}
+    }, 
+    "TEY1_TIMEPARAM/T_SEQUENCE_KEY": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }
+  }
+}

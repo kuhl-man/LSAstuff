@@ -1,0 +1,80 @@
+from abc import ABCMeta, abstractproperty
+
+class GenericDeviceGroups(object):
+  __metaclass__ = ABCMeta
+
+  def __init__(self):
+    pass
+
+  @abstractproperty
+  def rigidity(self):
+    pass
+
+  @abstractproperty
+  def accelerator_zone(self):
+    pass
+
+  @abstractproperty
+  def main_dipoles(self):
+    pass
+
+  @abstractproperty
+  def main_quadrupoles(self):
+    pass
+
+  @abstractproperty
+  def horizontal_correctors(self):
+    pass
+
+  @abstractproperty
+  def vertical_correctors(self):
+    pass
+
+  @abstractproperty
+  def extraction_quadrupoles(self):
+    pass
+
+  @abstractproperty
+  def correction_quadrupoles(self):
+    pass
+
+  @abstractproperty
+  def main_sextupoles(self):
+    pass
+
+  @abstractproperty
+  def chromaticity_sextupoles(self):
+    pass
+
+  @abstractproperty
+  def resonance_sextupoles(self):
+    pass
+
+  @abstractproperty
+  def correction_sextupoles(self):
+    pass
+
+  @abstractproperty
+  def correction_octupoles(self):
+    pass
+
+  @abstractproperty
+  def cavities(self):
+    pass
+
+  @abstractproperty
+  def inj_kicker(self):
+    pass
+
+  @abstractproperty
+  def ext_kicker(self):
+    pass
+
+  @abstractproperty
+  def q_kicker(self):
+    pass
+
+  @abstractproperty
+  def septum(self):
+    pass
+

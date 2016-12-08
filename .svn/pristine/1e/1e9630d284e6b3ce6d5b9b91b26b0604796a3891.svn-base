@@ -1,0 +1,164 @@
+#!/bin/env python2.6
+
+from lh_builder import LHBuilder
+
+from lh_builder_utils import LHBuilderUtils
+
+from devicedata_xml_parser import XMLParser
+
+class GenericTransferlineHierarchy:
+
+    def __init__(self, devices):
+        self.devices = devices
+        self.reader = LHBuilderUtils()
+        self.y_prec_parser = XMLParser(self.devices.accelerator_zone , self.devices.rigidity)
+
+    def generate_linkrules(self):
+        
+        print ('LinkRules:')
+        for device in self.devices.alldevices:
+            
+            ##print (self.devices._devicelinkrulemap)
+            if device in self.devices.devicelinkrulemap:
+                linkrule = self.devices.devicelinkrulemap.get(device)
+                
+                self.lh_builder.lh.add_linkrule_for_device(device,linkrule)
+                print (device , linkrule)
+
+    def build(self):
+
+        ## Standard beam and logical devices
+        self.beam_device = self.devices.accelerator_zone + '_BEAM'
+        self.lh_builder.lh.define_device(self.beam_device, 'BEAM', self.devices.accelerator_zone, description= self.beam_device + ' Transfer Line Beam')
+
+        ## Beam parameters
+        self.a_parameter = self.lh_builder.lh.define_physics_parameter(self.beam_device + '/A', 'SCALAR_A', self.beam_device, belongs_to_function_bproc=False)
+        self.aoq_parameter = self.lh_builder.lh.define_physics_parameter(self.beam_device + '/AOQ', 'SCALAR_AOQ', self.beam_device, is_trimable=False, belongs_to_function_bproc=False)
+        self.brho_parameter = self.lh_builder.lh.define_physics_parameter(self.beam_device + '/BRHO', 'BRHO', self.beam_device, is_trimable=False)
+        self.e_parameter = self.lh_builder.lh.define_physics_parameter(self.beam_device + '/E', 'SCALAR_E', self.beam_device)
+        self.element_parameter =  self.lh_builder.lh.define_physics_parameter(self.beam_device + '/ELEMENT', 'SCALAR_ELEMENT', self.beam_device, belongs_to_function_bproc=False)
+        self.erho_parameter =  self.lh_builder.lh.define_physics_parameter(self.beam_device + '/ERHO', 'ERHO', self.beam_device, is_trimable=False)
+        self.isotope_parameter = self.lh_builder.lh.define_physics_parameter(self.beam_device + '/ISOTOPE', 'SCALAR_ISOTOPE', self.beam_device, belongs_to_function_bproc=False)
+        self.q_parameter =  self.lh_builder.lh.define_physics_parameter(self.beam_device + '/Q', 'SCALAR_Q', self.beam_device, belongs_to_function_bproc=False)
+
+        self.lh_builder.lh.add_parameter_to_system(self.a_parameter, 'BEAM')
+        self.lh_builder.lh.add_parameter_to_system(self.aoq_parameter, 'BEAM')
+        self.lh_builder.lh.add_parameter_to_system(self.brho_parameter, 'BEAM')
+        
+        self.lh_builder.lh.add_parameter_to_system(self.e_parameter, 'BEAM')
+        self.lh_builder.lh.add_parameter_to_system(self.e_parameter, '-TOPLEVEL')
+        ## remove energy parameter for transfer lines from system 'generation'.
+        ## parameter is set by makerule from preceding ring or transfer line
+        ## self.lh_builder.lh.add_parameter_to_system(self.e_parameter, 'generation')
+        
+        self.lh_builder.lh.add_parameter_to_system(self.element_parameter, 'BEAM')
+        self.lh_builder.lh.add_parameter_to_system(self.element_parameter, '-TOPLEVEL')
+        self.lh_builder.lh.add_parameter_to_system(self.element_parameter, 'generation')
+        
+        self.lh_builder.lh.add_parameter_to_system(self.erho_parameter, 'BEAM')
+        
+        self.lh_builder.lh.add_parameter_to_system(self.isotope_parameter, 'BEAM')
+        self.lh_builder.lh.add_parameter_to_system(self.isotope_parameter, '-TOPLEVEL')
+        self.lh_builder.lh.add_parameter_to_system(self.isotope_parameter, 'generation')
+        
+        self.lh_builder.lh.add_parameter_to_system(self.q_parameter, 'BEAM')
+        self.lh_builder.lh.add_parameter_to_system(self.q_parameter, '-TOPLEVEL')
+        self.lh_builder.lh.add_parameter_to_system(self.q_parameter, 'generation')
+        
+        ## Magnet groups according to multipole
+        for device in self.devices.main_dipoles:
+            y_prec_KL = self.y_prec_parser.findYPrec(device, 'KL', 5.0e-5)
+            kl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/KL', 'K0L', device, y_prec=y_prec_KL)
+            y_prec_BL = self.y_prec_parser.findYPrec(device, 'BL', 5.0e-5)
+            bl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/BL', 'B0L', device, y_prec=y_prec_BL)
+            
+            system = self.devices.devicesystemmap.get(device)
+            print (device , system)
+            
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, system)
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, '-TOPLEVEL')
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, 'generation')
+            self.lh_builder.lh.add_parameter_to_system(bl_parameter, system)
+
+            
+        for device in self.devices.horizontal_correctors + self.devices.vertical_correctors:
+            y_prec_KL = self.y_prec_parser.findYPrec(device, 'KL', 1.0e-3)
+            kl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/KL', 'K0L', device, y_prec=y_prec_KL)
+            y_prec_BL = self.y_prec_parser.findYPrec(device, 'BL', 1.0e-4)
+            bl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/BL', 'B0L', device, y_prec=y_prec_BL)
+            
+            system = self.devices.devicesystemmap.get(device)
+            print (device , system)
+            
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, system)
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, '-TOPLEVEL')
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, 'generation')
+            self.lh_builder.lh.add_parameter_to_system(bl_parameter, system)
+
+        for device in self.devices.main_quadrupoles:
+            y_prec_KL = self.y_prec_parser.findYPrec(device, 'KL', 5.0e-5)
+            y_prec_BL = self.y_prec_parser.findYPrec(device, 'BL', 5.0e-5)
+                
+            kl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/KL', 'K1L', device, y_prec=y_prec_KL)
+            bl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/BL', 'B1L', device, y_prec=y_prec_BL)
+                
+            system = self.devices.devicesystemmap.get(device)
+            print (device , system)
+            
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, system)
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, '-TOPLEVEL')
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, 'generation')
+            self.lh_builder.lh.add_parameter_to_system(bl_parameter, system)
+            
+        for device in self.devices.main_sextupoles:
+            y_prec_KL = self.y_prec_parser.findYPrec(device, 'KL', 5.0e-5)
+            y_prec_BL = self.y_prec_parser.findYPrec(device, 'BL', 5.0e-5)
+                
+            kl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/KL', 'K2L', device, y_prec=y_prec_KL)
+            bl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/BL', 'B2L', device, y_prec=y_prec_BL)
+                
+            system = self.devices.devicesystemmap.get(device)
+            print (device , system)
+            
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, system)
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, '-TOPLEVEL')
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, 'generation')
+            self.lh_builder.lh.add_parameter_to_system(bl_parameter, system)
+            
+        for device in self.devices.septum:
+            y_prec_KL = self.y_prec_parser.findYPrec(device, 'KL', 5.0e-5)
+                
+            kl_parameter = self.lh_builder.lh.define_physics_parameter(device + '/KL', 'K0L', device, y_prec=y_prec_KL)
+            usep_parameter = self.lh_builder.lh.define_physics_parameter(device + '/USEP', 'USEP', device)
+
+            system = self.devices.devicesystemmap.get(device)
+            print (device , system)
+            
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, system)
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, '-TOPLEVEL')
+            self.lh_builder.lh.add_parameter_to_system(kl_parameter, 'generation')
+            self.lh_builder.lh.add_parameter_to_system(usep_parameter, system)
+
+
+
+        ### Creation of relations
+
+        ## Beam Parameters
+        self.lh_builder.create_child_node(self.a_parameter, [ self.isotope_parameter, self.element_parameter ])
+        self.lh_builder.create_child_node(self.aoq_parameter, [ self.a_parameter, self.q_parameter ])
+        self.lh_builder.create_child_node(self.brho_parameter, [ self.e_parameter, self.aoq_parameter ])
+        self.lh_builder.create_child_node(self.erho_parameter, [ self.brho_parameter, self.aoq_parameter ])
+
+
+        ## Magnets
+        for device in self.devices.main_dipoles + self.devices.horizontal_correctors + self.devices.vertical_correctors + self.devices.main_quadrupoles + self.devices.main_sextupoles:
+            bl_parameter = self.reader.find_unique_string(device + '/B[0-3]?L$', self.lh_builder.lh.get_parameters())
+            kl_parameter = self.reader.find_unique_string(device + '/K[0-3]?L$', self.lh_builder.lh.get_parameters())
+            self.lh_builder.create_child_node(bl_parameter, [ self.brho_parameter, kl_parameter ])
+            
+        for device in self.devices.septum:
+            usep_parameter = self.reader.find_unique_string(device + '/USEP', self.lh_builder.lh.get_parameters())
+            kl_parameter = self.reader.find_unique_string(device + '/K[0-3]?L$', self.lh_builder.lh.get_parameters())
+            self.lh_builder.create_child_node(usep_parameter, [ self.erho_parameter, kl_parameter ])
+            
+

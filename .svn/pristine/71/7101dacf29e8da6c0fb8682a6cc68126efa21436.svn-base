@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<devicedata>
+	
+  <comment>
+	  The data of the devices are collected in this file
+	    1. 90 degree analysing magnet --- from Svetlana Fedotova
+	    2. steerer magnets --- from Svetlana Fedotova
+		3. bender used as chopper horizontal corrector magnet
+	    4. electrostatic quadrupoles - don't use calibration data: only try-and-error settings????
+        5. einzel lens - don't use calibration data: only try-and-error settings???? 
+
+      YRT1MH1 fit by Ingrid Kraus
+          boundaries b0="0.003" b1="0.817" />
+          polynomial a0="-0.646468" a1="300.375" a2="-58.1226" a3="69.2976" />   
+      YRT1KH1 fit by Ingrid Kraus
+          boundaries b0="-0.003" b1="0.003" />
+          polynomial a0="0" a1="1666.67"  />   
+      YRT1KV1 fit by Ingrid Kraus
+          boundaries b0="-0.005" b1="0.005" />
+          polynomial a0="0" a1="1000."  />   
+
+  </comment>
+
+  <system name="CRYRING_YRLE">
+
+
+    <device name="YRT1MH1" group="DIPOLE">
+	      <!-- minimum current [A] -->
+	      <imin value="1."/>
+	      <!-- maximum current [A] -->
+	      <imax value="243.02"/>
+
+	      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+	      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="s.fedotova_2014Oct23">
+          <boundaries b0= "0.0036" b1= "0.356" b2= "0.697" b3= "0.855"/> 
+          <polynomial a0= "-1.035521" a1= "286.3847" a2= "-15.75859" a3= "26.37411"/>
+          <polynomial a0= "-4.162643" a1= "308.7377" a2= "-67.31417" a3= "64.12871"/>
+          <polynomial a0= "-852.7895" a1= "3949.439" a2= "-5273.592" a3= "2545.797"/>
+	      </calibration>            
+    </device>
+
+
+     <device name="YRT1KH1" group="HORIZONTALCORRECTOR">
+	      <!-- maximum current [A] -->
+	      <imax value="5."/>
+	      <!-- minimum current [A] -->
+	      <imin value="-5."/>
+
+	      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+	      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="s.fedotova_2014Sept19">
+            <boundaries b0= "0" b1= "0.00072" b2= "0.0024" b3= "0.003"/> 
+            <polynomial a0= "2.770512e-13" a1= "1666.667" a2= "-3.978494e-06" a3= "0.003132209"/>
+            <polynomial a0= "-8.84279e-13" a1= "1666.667" a2= "-1.277585e-06" a3= "0.0003131285"/>
+            <polynomial a0= "-6.505914e-11" a1= "1666.667" a2= "-2.731889e-05" a3= "0.003411687"/>
+	      </calibration>
+    </device>
+
+
+      <device name="YRT1KV1" group="VERTICALCORRECTOR">
+	      <!-- maximum current [A] -->
+	      <imax value="5."/>
+	      <!-- minimum current [A] -->
+	      <imin value="-5."/>
+
+	      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+	      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="s.fedotova_2014Sept19">
+            <boundaries b0= "0" b1= "0.0012" b2= "0.004" b3= "0.005"/> 
+            <polynomial a0= "-3.715788e-13" a1= "1000" a2= "-2.165566e-06" a3= "0.0009849415"/>
+            <polynomial a0= "-1.191763e-12" a1= "1000" a2= "-4.701062e-07" a3= "4.876505e-05"/>
+            <polynomial a0= "-3.030875e-11" a1= "1000" a2= "-5.320799e-06" a3= "0.0004268483"/>
+	      </calibration>
+    </device>
+
+
+    <device name="YRT1LQ11" group="HORIZONTALCORRECTOR">
+
+	      <!-- guess by Ingrid Kraus, to be updated by experts -->
+	      <!-- just a dummy calibration to shift expected voltage to El = 1V -->
+	      <!-- minimum voltage [V] -->
+	      <umin value="0."/>
+	      <!-- maximum voltage [V] -->
+	      <umax value="15000."/>
+
+	      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+	      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+	        <boundaries b0="0." b1="2.5" />
+	        <polynomial a0="0.0" a1="6000." />
+	      </calibration>
+    </device>
+
+    <device name="YRT1LQ12" group="HORIZONTALCORRECTOR">
+
+	      <!-- guess by Ingrid Kraus, to be updated by experts -->
+	      <!-- just a dummy calibration to shift expected voltage to El = 1V -->
+	      <!-- minimum voltage [V] -->
+	      <umin value="-15000."/>
+	      <!-- maximum voltage [V] -->
+	      <umax value="0."/>
+
+	      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+	      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+	        <boundaries b0="0." b1="2.5" />
+	        <polynomial a0="0.0" a1="-6000." />
+	      </calibration>
+    </device>
+
+    <device name="YRT1LQ13" group="HORIZONTALCORRECTOR">
+
+	      <!-- guess by Ingrid Kraus, to be updated by experts -->
+	      <!-- just a dummy calibration to shift expected voltage to El = 1V -->
+	      <!-- minimum voltage [V] -->
+	      <umin value="0."/>
+	      <!-- maximum voltage [V] -->
+	      <umax value="15000."/>
+
+	      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+	      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+	        <boundaries b0="0." b1="5.0" />
+	        <polynomial a0="0.0" a1="3000." />
+	      </calibration>
+    </device>
+
+    <device name="YRT1LQ14" group="HORIZONTALCORRECTOR">
+
+	      <!-- guess by Ingrid Kraus, to be updated by experts -->
+	      <!-- just a dummy calibration to shift expected voltage to El = 1V -->
+	      <!-- minimum voltage [V] -->
+	      <umin value="-15000."/>
+	      <!-- maximum voltage [V] -->
+	      <umax value="0."/>
+
+	      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+	      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+	        <boundaries b0="0." b1="5.0" />
+	        <polynomial a0="0.0" a1="-3000." />
+	      </calibration>
+    </device>
+
+    <device name="YRT1LC1_V" group="ELECTORSTATIC_QUADRUPOLE">
+
+	      <!-- guess by Ingrid Kraus, to be updated by experts -->
+	      <!-- taken from xls table from Cryring disk-->
+	      <!-- minimum voltage [V] -->
+	      <umin value="0."/>
+	      <!-- maximum voltage [V] -->
+	      <umax value="15000."/>
+
+	      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+	      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+	        <boundaries b0="0." b1="15000." />
+	        <polynomial a0="0.0" a1="1." />
+	      </calibration>
+    </device>
+
+    <device name="YRT1LD21" group="ELECTORSTATIC_QUADRUPOLE">
+
+	      <!-- guess by Ingrid Kraus, to be updated by experts -->
+	      <!-- taken from xls table from Cryring disk-->
+	      <!-- minimum voltage [V] -->
+	      <umin value="-4000."/>
+	      <!-- maximum voltage [V] -->
+	      <umax value="4000."/>
+
+	      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+	      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+	        <boundaries b0="-4000." b1="4000." />
+	        <polynomial a0="0.0" a1="1." />
+	      </calibration>
+    </device>
+
+    <device name="YRT1LD22" group="ELECTORSTATIC_QUADRUPOLE">
+
+	      <!-- guess by Ingrid Kraus, to be updated by experts -->
+	      <!-- taken from xls table from Cryring disk-->
+	      <!-- minimum voltage [V] -->
+	      <umin value="-4000."/>
+	      <!-- maximum voltage [V] -->
+	      <umax value="4000."/>
+
+	      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+	      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+	        <boundaries b0="-4000." b1="4000." />
+	        <polynomial a0="0.0" a1="1." />
+	      </calibration>
+    </device>
+
+    <device name="YRT1LT31" group="ELECTORSTATIC_QUADRUPOLE">
+
+          <!-- guess by Ingrid Kraus, to be updated by experts -->
+          <!-- taken from xls table from Cryring disk-->
+          <!-- minimum voltage [V] -->
+          <umin value="-4000."/>
+          <!-- maximum voltage [V] -->
+          <umax value="4000."/>
+
+          <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+          <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+            <boundaries b0="-4000." b1="4000." />
+            <polynomial a0="0.0" a1="1." />
+          </calibration>
+    </device>
+
+    <device name="YRT1LT32" group="ELECTORSTATIC_QUADRUPOLE">
+
+          <!-- guess by Ingrid Kraus, to be updated by experts -->
+          <!-- taken from xls table from Cryring disk-->
+          <!-- minimum voltage [V] -->
+          <umin value="-4000."/>
+          <!-- maximum voltage [V] -->
+          <umax value="4000."/>
+
+          <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+          <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+            <boundaries b0="-4000." b1="4000." />
+            <polynomial a0="0.0" a1="1." />
+          </calibration>
+    </device>
+
+    <device name="YRT1LT33" group="ELECTORSTATIC_QUADRUPOLE">
+
+          <!-- guess by Ingrid Kraus, to be updated by experts -->
+          <!-- taken from xls table from Cryring disk-->
+          <!-- minimum voltage [V] -->
+          <umin value="-4000."/>
+          <!-- maximum voltage [V] -->
+          <umax value="4000."/>
+
+          <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+          <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+            <boundaries b0="-4000." b1="4000." />
+            <polynomial a0="0.0" a1="1." />
+          </calibration>
+    </device>
+
+    <device name="YRT1LT41" group="ELECTORSTATIC_QUADRUPOLE">
+
+          <!-- guess by Ingrid Kraus, to be updated by experts -->
+          <!-- taken from xls table from Cryring disk-->
+          <!-- minimum voltage [V] -->
+          <umin value="-4000."/>
+          <!-- maximum voltage [V] -->
+          <umax value="4000."/>
+
+          <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+          <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+            <boundaries b0="-4000." b1="4000." />
+            <polynomial a0="0.0" a1="1." />
+          </calibration>
+    </device>
+
+    <device name="YRT1LT42" group="ELECTORSTATIC_QUADRUPOLE">
+
+          <!-- guess by Ingrid Kraus, to be updated by experts -->
+          <!-- taken from xls table from Cryring disk-->
+          <!-- minimum voltage [V] -->
+          <umin value="-4000."/>
+          <!-- maximum voltage [V] -->
+          <umax value="4000."/>
+
+          <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+          <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+            <boundaries b0="-4000." b1="4000." />
+            <polynomial a0="0.0" a1="1." />
+          </calibration>
+    </device>
+
+    <device name="YRT1LT43" group="ELECTORSTATIC_QUADRUPOLE">
+
+          <!-- guess by Ingrid Kraus, to be updated by experts -->
+          <!-- taken from xls table from Cryring disk-->
+          <!-- minimum voltage [V] -->
+          <umin value="-4000."/>
+          <!-- maximum voltage [V] -->
+          <umax value="4000."/>
+
+          <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+          <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+            <boundaries b0="-4000." b1="4000." />
+            <polynomial a0="0.0" a1="1." />
+          </calibration>
+    </device>
+
+
+    <device name="YRT1LE1" group="ELECTORSTATIC_QUADRUPOLE">
+
+          <!-- guess by Ingrid Kraus, to be updated by experts -->
+          <!-- taken from xls table from Cryring disk-->
+          <!-- minimum voltage [V] -->
+          <umin value="0."/>
+          <!-- maximum voltage [V] -->
+          <umax value="4000."/>
+
+          <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+          <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+            <boundaries b0="0." b1="26860." />
+            <polynomial a0="0.0" a1="0.148919878956569" />
+          </calibration>
+    </device>
+
+
+  </system>
+
+</devicedata>
+

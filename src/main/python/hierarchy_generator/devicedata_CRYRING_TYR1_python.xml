@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devicedata>
+
+  <comment>
+  The data of the devices are collected in this file
+
+   B. injection line
+    1. 35 degree bending magnet --- from Svetlana Fedotova
+    2. steerer magnet --- from Svetlana Fedotova
+    3. magnetic quadrupoles --- from Svetlana Fedotova
+	4. electrostatic injection septa
+	5. magnetic injection septum --- from Svetlana Fedotova
+
+      YRT1MH2 fit by Ingrid Kraus
+        boundaries b0="0." b1="0.97" />
+        polynomial a0="0." a1="484.452" />   
+
+      GHTYKV3 fit by Ingrid Kraus
+        boundaries b0="-0.01" b1="0.01" />
+        polynomial a0="0" a1="300."  />   
+
+      GHTYQD41 fit by Ingrid Kraus
+        boundaries b0= "0." b1="3.6" />
+        polynomial a0="0." a1="55.56" />
+
+      GHTYQD42 fit by Ingrid Kraus
+        boundaries b0= "-3.6" b1="0." />
+        polynomial a0="0." a1="-55.56" />
+
+      YR01MP1I fit by Ingrid Kraus
+        boundaries b0="0." b1="0.230" />
+        polynomial a0="0" a1="7256."  />   
+
+  </comment>
+
+  <system name="CRYRING_TYR1">
+
+
+    <device name="YRT1MH2" group="DIPOLE">
+      <!-- taken from LSR TDR and Danfysik data sheet for magnet no 88 290 -->
+      <!-- TODO: please check whether a weaker power supply at FAIR will reduce Imax and BLmax! To I=135A ? -->
+      <!-- minimum current [A] -->
+      <imin value="0."/>
+      <!-- maximum current [A] -->
+      <imax value="600."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="s.fedotova_2014Aug14">
+          <boundaries b0= "0.00152" b1= "0.617" b2= "0.842" b3= "0.962"/> 
+          <polynomial a0= "-0.7088704" a1= "494.6059" a2= "-34.10257" a3= "36.07119"/>
+          <polynomial a0= "-676.7971" a1= "3821.095" a2= "-5489.01" a3= "3017.39"/>
+          <polynomial a0= "-8928.15" a1= "31554.98" a2= "-36449.41" a3= "14491.14"/>
+      </calibration>            
+    </device>
+ 
+ 
+    <device name="GHTYKV3" group="VERTICALCORRECTOR">
+      <!-- taken from LSR TDR -->
+      <!-- maximum current [A] -->
+      <imax value="3."/>
+      <!-- minimum current [A] -->
+      <imin value="-3."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="s.fedotova_2014Sept18">
+          <boundaries b0= "0" b1= "0.002" b2= "0.006" b3= "0.01"/> 
+          <polynomial a0= "-8.265171e-09" a1= "299.9997" a2= "0.4004919" a3= "-119.8293"/>
+          <polynomial a0= "6.811648e-07" a1= "299.9995" a2= "0.1354596" a3= "-10.48184"/>
+          <polynomial a0= "2.595122e-06" a1= "299.999" a2= "0.1213052" a3= "-4.87185"/>
+      </calibration>
+    </device>
+
+
+    <device name="GHTYQD41" group="QUADRUPOLE">
+      <!-- taken from LSR TDR and CS excel file on Cryring disk -->
+      <!-- TODO: please check what's the magnets length!-->
+      <!-- minimum current [A] -->
+      <imin value="0.1"/>
+      <!-- maximum current [A] -->
+      <imax value="200."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="s.fedotova_2014Sept22">
+          <boundaries b0= "0.003667829" b1= "0.3635787" b2= "2.705475" b3= "3.503877"/> 
+          <polynomial a0= "-0.214098" a1= "55.77843" a2= "-2.547771" a3= "4.906121"/>
+          <polynomial a0= "-0.4301603" a1= "56.34182" a2= "-0.7434423" a3= "0.1769961"/>
+          <polynomial a0= "-175.9173" a1= "251.1166" a2= "-72.80414" a3= "9.063738"/>
+      </calibration>
+    </device>
+
+
+    <device name="GHTYQD42" group="QUADRUPOLE">
+      <!-- taken from LSR TDR and CS excel file on Cryring disk -->
+      <!-- TODO: please check what's the magnets length!-->
+      <!-- minimum current [A] -->
+      <imin value="0.1"/>
+      <!-- maximum current [A] -->
+      <imax value="200."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="s.fedotova_2014Sept22">
+          <boundaries b0= "-3.503877" b1= "-2.705475" b2= "-0.3635787" b3= "-0.003667829"/> 
+          <polynomial a0= "-175.9173" a1= "-251.1166" a2= "-72.80414" a3= "-9.063738"/>
+          <polynomial a0= "-0.4301603" a1= "-56.34182" a2= "-0.7434423" a3= "-0.1769961"/>
+          <polynomial a0= "-0.214098" a1= "-55.77843" a2= "-2.547771" a3= "-4.906121"/>
+      </calibration>
+    </device>
+
+
+    <device name="YR01LP1" group="DIPOLE">
+
+      <!-- guess by Ingrid Kraus, to be updated by experts -->
+      <!-- taken from LSR TDR and measurements by Nicolas Winckler-->
+      <!-- minimum voltage [V] -->
+      <umin value="-16000."/>
+      <!-- maximum voltage [V] -->
+      <umax value="16000."/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+        <boundaries b0="-100800." b1="100800." />
+        <polynomial a0="0.0" a1="-0.15873" />
+      </calibration>
+    </device>
+
+
+   <device name="YR01LP2" group="DIPOLE">
+
+      <!-- guess by Ingrid Kraus, to be updated by experts -->
+      <!-- taken from LSR TDR and measurements by Nicolas Winckler-->
+      <!-- minimum voltage [V] -->
+      <umin value="-16000."/>
+      <!-- maximum voltage [V] -->
+      <umax value="16000."/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ikraus">
+        <boundaries b0="-129641." b1="129641." />
+        <polynomial a0="0.0" a1="-0.12342" />
+      </calibration>
+    </device>
+
+
+    <device name="YR01MP1" group="DIPOLE">
+      <!-- taken from LSR TDR -->
+      <!-- maximum current [A] -->
+      <imax value="1670."/>
+      <!-- minimum current [A] -->
+      <imin value="0."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="s.fedotova_2014Sept19">
+          <boundaries b0= "0.0002280296" b1= "0.02823628" b2= "0.1548997" b3= "0.2393249"/> 
+          <polynomial a0= "-1.759593" a1= "7163.488" a2= "-1021.486" a3= "7946.807"/>
+          <polynomial a0= "-1.560663" a1= "7144.009" a2= "-390.2905" a3= "1188.023"/>
+          <polynomial a0= "-1.692878" a1= "7119.455" a2= "-56.72669" a3= "93.52755"/>
+      </calibration>
+    </device>
+
+
+  </system>
+
+</devicedata>
+    

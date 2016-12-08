@@ -1,0 +1,2037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devicedata>
+
+  <comment>
+    The data of the devices are collected in this file
+  </comment>
+
+  <system name="ESR_python">
+
+    <device name="E02KS2" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="-31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KS1" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KX1" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="1.241" />
+        <polynomial a0="0.9927999999999999" a1="2.7577777777777805E-4" a2="-7.660493827160501E-8" />
+        <polynomial a0="-0.6099514999999989" a1="0.0014630011111111103" a2="-2.96461111111111E-7" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="-1.27" />
+        <polynomial a0="-1.0159999999999998" a1="-2.822222222222225E-4" a2="7.839506172839513E-8" />
+        <polynomial a0="0.6242049999999983" a1="-0.0014971888888888878" a2="3.033888888888887E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KX2" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="-2.049" />
+        <polynomial a0="-1.6391999999999995" a1="-4.5533333333333374E-4" a2="1.264814814814816E-7" />
+        <polynomial a0="1.0070834999999976" a1="-0.0024155433333333315" a2="4.89483333333333E-7" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="2.04" />
+        <polynomial a0="1.6319999999999997" a1="4.533333333333338E-4" a2="-1.2592592592592605E-7" />
+        <polynomial a0="-1.0026599999999977" a1="0.002404933333333332" a2="-4.873333333333331E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KS4" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KS3" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="-31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP24" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="8.526512829121202E-14" a1="-29.542292752905976" a2="0.9113416382185756" a3="6.30003754575002" a4="-2.574365347823929" a5="0.3511812549348689" a6="-0.015085634329638489" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP23" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-250.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="0.0" a1="-5.408726404974529" a2="-4.464332955402204" a3="2.582733631368111" a4="-0.6332387412799334" a5="0.06596412833170755" a6="-0.0021984689300584173" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP20" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-40.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="40.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="4.000000000017323E-4" a1="-0.8433144256212978" a2="2.335979318910118" a3="-1.4162267466991332" a4="0.37488131278034326" a5="-0.043111876110963836" a6="0.0017346515934266351" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01MU4I" group="PULSEDMAGNET">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="6000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="1.3558322033898305"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1.3559322033898304" />
+        <polynomial a0="0.0" a1="4425.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP22" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="-0.0015999999999998238" a1="5.814272917366978" a2="-5.382415870362778" a3="0.2762966227442052" a4="0.345905978715275" a5="-0.06751141429733108" a6="0.0034603269819713724" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP21" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-70.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="70.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="-7.549516567451064E-15" a1="4.8762658784483675" a2="-3.460044906371496" a3="0.3633622603245608" a4="0.16596672762620207" a5="-0.0368144259655753" a6="0.0019095473354223504" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KS2" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="-31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KS3" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="-31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS4F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.009816348287136678"/>
+
+      <!-- maximum integral field -->
+      <blmax value="4.852994788432531"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.009716348287127186" b1="5.034583942745472" />
+        <polynomial a0="-0.3946700000013843" a1="143.46700000000214" a2="7.452509999999644" a3="-9.773170000000029" a4="5.953080000000019" a5="-1.7964600000000017" a6="0.25520900000000013" a7="-0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KS4" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS8F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.009816348287136678"/>
+
+      <!-- maximum integral field -->
+      <blmax value="4.852994788432531"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.009716348287127186" b1="5.034583942745472" />
+        <polynomial a0="-0.3946700000013843" a1="143.46700000000214" a2="7.452509999999644" a3="-9.773170000000029" a4="5.953080000000019" a5="-1.7964600000000017" a6="0.25520900000000013" a7="-0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KX3" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KX2" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="2.04" />
+        <polynomial a0="1.6319999999999997" a1="4.533333333333338E-4" a2="-1.2592592592592605E-7" />
+        <polynomial a0="-1.0026599999999977" a1="0.002404933333333332" a2="-4.873333333333331E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KX1" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="-1.27" />
+        <polynomial a0="-1.0159999999999998" a1="-2.822222222222225E-4" a2="7.839506172839513E-8" />
+        <polynomial a0="0.6242049999999983" a1="-0.0014971888888888878" a2="3.033888888888887E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KS1" group="SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.1199"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.1199"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B''*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.12" b1="5.12" />
+        <polynomial a0="0.0" a1="31.25" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS0D" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-4.852994788432538"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-0.009816348286959395"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.034583942745472" b1="-0.009716348287127186" />
+        <polynomial a0="-0.3946699999758039" a1="-143.4669999999897" a2="7.452510000001034" a3="9.77317000000004" a4="5.953080000000016" a5="1.7964600000000004" a6="0.25520900000000013" a7="0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02BE1A" group="RFCAVITY">
+
+      <!-- minimum voltage [V] -->
+      <umin value="2.0"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="5000.0"/>
+
+    </device>
+
+
+    <device name="E01KY2" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KY3" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KY1" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP18" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-15.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="15.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="2.220446049250313E-16" a1="-2.915529795614658" a2="2.9658902820116837" a3="-0.98613393702889" a4="0.14269725501082953" a5="-0.008660207727217551" a6="1.716699183662841E-4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP19" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-40.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="40.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="3.9999999999906777E-4" a1="-5.349879161255782" a2="6.424352116595961" a3="-2.5453524482035523" a4="0.4779378723113317" a5="-0.0422065849739444" a6="0.0014098251792629796" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP16" group="POLEFACECOILNOCURVE">
+
+      <!-- minimum current [A] -->
+      <imin value="-15.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="15.0"/>
+
+    </device>
+
+
+    <device name="E01KP17" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-15.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="15.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="1.1587952819525071E-15" a1="-2.8592550063915825" a2="2.8483657121156005" a3="-0.9357503729251171" a4="0.12380898895173292" a5="-0.005726414605577192" a6="2.9663552070644676E-5" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP15" group="POLEFACECOILNOCURVE">
+
+      <!-- minimum current [A] -->
+      <imin value="-5.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5.0"/>
+
+    </device>
+
+
+    <device name="E01KP14" group="POLEFACECOILNOCURVE">
+
+      <!-- minimum current [A] -->
+      <imin value="-5.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5.0"/>
+
+    </device>
+
+
+    <device name="E01MU5L" group="PULSEDMAGNET">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="1000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.0499"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="0.05" />
+        <polynomial a0="0.0" a1="20000.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP13" group="POLEFACECOILNOCURVE">
+
+      <!-- minimum current [A] -->
+      <imin value="-5.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5.0"/>
+
+    </device>
+
+
+    <device name="E01KP12" group="POLEFACECOILNOCURVE">
+
+      <!-- minimum current [A] -->
+      <imin value="-5.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5.0"/>
+
+    </device>
+
+
+    <device name="E01KX6" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="1.27" />
+        <polynomial a0="1.0159999999999998" a1="2.822222222222225E-4" a2="-7.839506172839513E-8" />
+        <polynomial a0="-0.6242049999999983" a1="0.0014971888888888878" a2="-3.033888888888887E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP11" group="POLEFACECOILNOCURVE">
+
+      <!-- minimum current [A] -->
+      <imin value="-5.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5.0"/>
+
+    </device>
+
+
+    <device name="E01KX5" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="-2.04" />
+        <polynomial a0="-1.6319999999999997" a1="-4.533333333333338E-4" a2="1.2592592592592605E-7" />
+        <polynomial a0="1.0026599999999977" a1="-0.002404933333333332" a2="4.873333333333331E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP10" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-15.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="15.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="1.5000000000142677E-4" a1="-0.3637018784973275" a2="-0.056863656535085336" a3="0.23823354281959733" a4="-0.09597035199115307" a5="0.013248285952582177" a6="-5.793859744862085E-4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01ME1L" group="SEPTUM">
+
+      <!-- minimum voltage [V] -->
+      <umin value="0.0"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="160000.0"/>
+
+      <!-- clearing factor -->
+      <clearingfactor value="100.0"/>
+
+      <!-- clearing offset -->
+      <clearingoffset value="500.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for U = U(EL) -->
+      <calibration type="EL_INTFIELD2VOLTAGE" xunit="V" yunit="V" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="2909090.909090909" />
+        <polynomial a0="0.0" a1="0.055" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KX4" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KX3" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS3D" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0030"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.6667"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-7.351850967963015"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-0.014600690596744256"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.163"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-7.638465071380165" b1="-0.014500690596779038" />
+        <polynomial a0="-0.40629599999658694" a1="-96.99139999999721" a2="-0.705224999999448" a3="-0.6615139999999542" a4="-0.25557499999999883" a5="-0.05303999999999987" a6="-0.006195539999999997" a7="-3.310640000000001E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="530.0" b3="807.8947368421053" />
+        <polynomial a0="0.442" />
+        <polynomial a0="0.41944045368620037" a1="1.5039697542533096E-4" a2="-2.5066162570888496E-7" />
+        <polynomial a0="-0.019163524980533142" a1="0.0018055063288847028" a2="-1.8120855440667829E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS7F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.009816348287136678"/>
+
+      <!-- maximum integral field -->
+      <blmax value="4.852994788432531"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.009716348287127186" b1="5.034583942745472" />
+        <polynomial a0="-0.3946700000013843" a1="143.46700000000214" a2="7.452509999999644" a3="-9.773170000000029" a4="5.953080000000019" a5="-1.7964600000000017" a6="0.25520900000000013" a7="-0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KY3" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KY4" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="ECEKY5C" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-5.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.87502578134668E-4"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.87502578134668E-4"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-6.875025781346681E-4" b1="6.875025781346681E-4" />
+        <polynomial a0="0.0" a1="7272.7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KY1" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02MU0L" group="BYPASS">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="150.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-2.1282427153166017"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-6.753832698882405E-4"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="LINEAR_TEST">
+        <boundaries b0="-2.128342715316602" b1="-5.753832698882405E-4" />
+        <polynomial a0="0.0" a1="-1737.971978563497" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS1F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.009816348287136678"/>
+
+      <!-- maximum integral field -->
+      <blmax value="4.852994788432531"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.009716348287127186" b1="5.034583942745472" />
+        <polynomial a0="-0.3946700000013843" a1="143.46700000000214" a2="7.452509999999644" a3="-9.773170000000029" a4="5.953080000000019" a5="-1.7964600000000017" a6="0.25520900000000013" a7="-0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KY2" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01BE2FS" group="RFCAVITY">
+
+      <!-- minimum frequency [Hz] -->
+      <fmin value="240000.0"/>
+
+      <!-- maximum frequency [Hz] -->
+      <fmax value="260000.0"/>
+
+    </device>
+
+
+    <device name="E01KP05" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-110.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="110.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="-0.0011000000000138677" a1="-17.956614900753305" a2="21.645146629153874" a3="-9.607136202570327" a4="1.9624961143141129" a5="-0.1850031903908259" a6="0.006490497395618077" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP06" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-70.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="70.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="7.000000000094708E-4" a1="-4.532683598433718" a2="7.058102645791695" a3="-3.579920916266712" a4="0.8125415215493451" a5="-0.08336708064310687" a6="0.0030965101778519756" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP07" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-40.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="40.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="-4.00000000000289E-4" a1="3.5012420079054816" a2="-2.960746180146313" a3="0.8503186394261253" a4="-0.0930798794328019" a5="0.0020675295934569444" a6="1.110805354134779E-4" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP08" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-40.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="40.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="-4.000000000021764E-4" a1="7.536803469308464" a2="-8.379322371777931" a3="3.349688736788833" a4="-0.6256229701284268" a5="0.054112806693490535" a6="-0.001752604003190429" />
+      </calibration>
+
+    </device>
+
+
+    <device name="ECEKX5C" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-5.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="5.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-5.87502578134668E-4"/>
+
+      <!-- maximum integral field -->
+      <blmax value="5.87502578134668E-4"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-6.875025781346681E-4" b1="6.875025781346681E-4" />
+        <polynomial a0="0.0" a1="7272.7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP09" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-15.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="15.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="1.5000000000120473E-4" a1="2.4989329951148567" a2="-3.2354003207977704" a3="1.4736278891102228" a4="-0.31181600492283734" a5="0.030256107066388045" a6="-0.0010754615474123088" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01MU1" group="DIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="3699.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="3515.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.5"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-12000.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="12000.0"/>
+
+      <!-- maximum slope dI/dt [A/s] -->
+      <idotmax value="2312.5"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.005671205908866846"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.610910783201751"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1278"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.381" />
+        <polynomial a0="0.30479999999999996" a1="8.466666666666674E-5" a2="-2.351851851851854E-8" />
+        <polynomial a0="-0.18726149999999953" a1="4.4915666666666635E-4" a2="-9.101666666666662E-8" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS6D" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0030"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.6667"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-7.351850967963015"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-0.014600690596744256"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.173"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-7.638465071380165" b1="-0.014500690596779038" />
+        <polynomial a0="-0.40629599999658694" a1="-96.99139999999721" a2="-0.705224999999448" a3="-0.6615139999999542" a4="-0.25557499999999883" a5="-0.05303999999999987" a6="-0.006195539999999997" a7="-3.310640000000001E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.467" />
+        <polynomial a0="0.4354775" a1="2.101500000000002E-4" a2="-3.502500000000003E-7" />
+        <polynomial a0="0.07919702479338858" a1="0.0016352719008264458" a2="-1.775371900826446E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KY4" group="VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.040056006083634924"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.040056006083634924"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-0.040156006083634926" b1="0.040156006083634926" />
+        <polynomial a0="0.0" a1="-9961.15" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP02" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-400.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="400.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="-0.004000000000146997" a1="42.32044409160874" a2="-78.5023086915634" a3="35.78467085892858" a4="-7.491738900525005" a5="0.7186756768932568" a6="-0.02498190021193016" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP04" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-160.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="160.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="-0.0015999999999944947" a1="-19.437991926504615" a2="18.419424553469508" a3="-7.513098780095449" a4="1.4205233106309483" a5="-0.12528273253300087" a6="0.004254721114019275" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01KP03" group="POLEFACECOIL">
+
+      <!-- minimum current [A] -->
+      <imin value="-250.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="250.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.651205998213293"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="10.651305998213292" />
+        <polynomial a0="4.973799150320701E-14" a1="1.3054737139588415" a2="-15.748214799083437" a3="8.039960022409447" a4="-1.827616013800074" a5="0.18576394866067272" a6="-0.006602419450239233" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KX6" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="1.27" />
+        <polynomial a0="1.0159999999999998" a1="2.822222222222225E-4" a2="-7.839506172839513E-8" />
+        <polynomial a0="-0.6242049999999983" a1="0.0014971888888888878" a2="-3.033888888888887E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KX5" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="-2.04" />
+        <polynomial a0="-1.6319999999999997" a1="-4.533333333333338E-4" a2="1.2592592592592605E-7" />
+        <polynomial a0="1.0026599999999977" a1="-0.002404933333333332" a2="4.873333333333331E-7" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02KX4" group="CORRECTIONCOILWITHOUTINDUCTANCE">
+
+      <!-- minimum current [A] -->
+      <imin value="-125.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="125.0"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2COUPLING_INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0055712059088668464" b1="11.053363635539128" />
+        <polynomial a0="-0.8070529999999998" a1="324.3636039166975" a2="-1.40534465436714" a3="1.117260327139554" a4="-0.4169270843038062" a5="0.07888297047380165" a6="-0.007329351343661381" a7="2.6630377918574247E-4" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="1800.0" b2="2700.0" b3="3732.8947368421054" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+        <polynomial a0="0.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01BE2A" group="RFCAVITY">
+
+      <!-- minimum voltage [V] -->
+      <umin value="2.0"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="1000.0"/>
+
+    </device>
+
+
+    <device name="E01QS2F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.009816348287136678"/>
+
+      <!-- maximum integral field -->
+      <blmax value="4.852994788432531"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.009716348287127186" b1="5.034583942745472" />
+        <polynomial a0="-0.3946700000013843" a1="143.46700000000214" a2="7.452509999999644" a3="-9.773170000000029" a4="5.953080000000019" a5="-1.7964600000000017" a6="0.25520900000000013" a7="-0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02BE1FS" group="RFCAVITY">
+
+      <!-- minimum frequency [Hz] -->
+      <fmin value="800000.0"/>
+
+      <!-- maximum frequency [Hz] -->
+      <fmax value="5600000.0"/>
+
+    </device>
+
+
+    <device name="E01MU0R" group="BYPASS">
+
+      <!-- minimum current [A] -->
+      <imin value="0.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="150.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-2.1282427153166017"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-6.753832698882405E-4"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="LINEAR_TEST">
+        <boundaries b0="-2.128342715316602" b1="-5.753832698882405E-4" />
+        <polynomial a0="0.0" a1="-1737.971978563497" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS5F" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.009816348287136678"/>
+
+      <!-- maximum integral field -->
+      <blmax value="4.852994788432531"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.009716348287127186" b1="5.034583942745472" />
+        <polynomial a0="-0.3946700000013843" a1="143.46700000000214" a2="7.452509999999644" a3="-9.773170000000029" a4="5.953080000000019" a5="-1.7964600000000017" a6="0.25520900000000013" a7="-0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E02MK" group="KICKER">
+
+      <!-- minimum voltage [V] -->
+      <umin value="0.0"/>
+
+      <!-- maximum voltage [V] -->
+      <umax value="400000.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.0"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.08323333333333333"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for U = U(B*L) -->
+      <calibration type="MAG_INTFIELD2VOLTAGE" xunit="Tm" yunit="V" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="0.08333333333333333" />
+        <polynomial a0="0.0" a1="4800000.0" />
+      </calibration>
+
+    </device>
+
+
+    <device name="E01QS9D" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="1.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="775.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="1.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="736.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0040"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.245"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-4.852994788432538"/>
+
+      <!-- maximum integral field -->
+      <blmax value="-0.009816348286959395"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1265"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="-5.034583942745472" b1="-0.009716348287127186" />
+        <polynomial a0="-0.3946699999758039" a1="-143.4669999999897" a2="7.452510000001034" a3="9.77317000000004" a4="5.953080000000016" a5="1.7964600000000004" a6="0.25520900000000013" a7="0.0129111" />
+      </calibration>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for L = L(I) -->
+      <calibration type="CURRENT2INDUCTANCE" xunit="A" yunit="H" precision="1.0E-5" source="ESRSTD.eix">
+        <boundaries b0="0.0" b1="300.0" b2="500.0" b3="807.8947368421053" />
+        <polynomial a0="0.295" />
+        <polynomial a0="0.28836249999999997" a1="4.425000000000004E-5" a2="-7.375000000000006E-8" />
+        <polynomial a0="-0.017456198347107377" a1="0.0012675247933884295" a2="-1.2970247933884295E-6" />
+      </calibration>
+
+    </device>
+
+
+  </system>
+
+</devicedata>

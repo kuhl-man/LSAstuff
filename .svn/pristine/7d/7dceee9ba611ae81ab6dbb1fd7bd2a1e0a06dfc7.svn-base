@@ -1,0 +1,2515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devicedata>
+
+  <comment>
+  The data of the devices are collected in this file
+   A. ring
+	1. main dipole magnets, "HR08MH01.GN" , "HR18MH23.GN"
+	2. quadrupole magnets, 
+				"HR03QTA3D.GN" , "HR03QTA3F.GN" , "HR05QTA4D.GN" , "HR05QTA4F.GN" , "HR08QSA0D.GN" , "HR08QSA1D.GN" ,
+				"HR08QSA1F.GN" , "HR09QSA2D.GN" , "HR09QSA2F.GN" , "HR09QSA3D.GN" , "HR09QSA3F.GN" , "HR12QTA5D.GN" ,
+				"HR12QTA5F.GN" , "HR14QTA6D.GN" , "HR14QTA6F.GN" , "HR18QSA4D.GN" , "HR18QSA5D.GN" , "HR18QSA5F.GN" ,
+				"HR19QSA6D.GN" , "HR19QSA6F.GN" , "HR19QSA7D.GN" , "HR19QSA7F.GN" , "HR22QTA1D.GN" , "HR22QTA1F.GN" , 
+				"HR22QTA2F.GN"
+	3. sextupole magnets
+	"HR01KS01.GN" , "HR03KS02.GN" , "HR03KS03.GN" , "HR05KS04.GN" , "HR05KS05.GN" , "HR07KS06.GN" , "HR08KSA1H.GN" ,
+	"HR08KSA1V.GN" , "HR09KSA2H.GN" , "HR09KSA2V.GN" , "HR10KSA3H.GN" , "HR10KSA3V.GN" , "HR10KSA4H.GN" , "HR11KSA4V.GN" ,
+	"HR12KS07.GN" , "HR14KS08.GN" , "HR14KS09.GN" , "HR17KS10.GN" , "HR17KS11.GN" , "HR18KS12.GN" , "HR18KSA5H.GN" ,
+	"HR18KSA5V.GN" , "HR19KSA6H.GN" , "HR19KSA6V.GN" , "HR20KSA7H.GN" , "HR20KSA7V.GN" , "HR20KSA8H.GN" , "HR21KSA8V.GN"
+	4. corrector dipole magnets (steerer)
+	vertical
+	"HR08KV1.GN" , "HR09KV2.GN" , "HR10KV1.GN" , "HR10KV2.GN" , "HR11KV1.GN" , "HR12KV1.GN" , "HR12KV2.GN" , "HR14KV1.GN" ,
+	"HR14KV2.GN" , "HR14KV3.GN" , "HR17KV1.GN" , "HR17KV2.GN" , "HR17KV3.GN" , "HR18KV1.GN" , "HR18KV2.GN" , "HR19KV1.GN" ,
+	"HR20KV1.GN" , "HR20KV2.GN" , "HR21KV1.GN" , "HR22KV1.GN" , "HR01KV1.GN" , "HR03KV1.GN" , "HR03KV2.GN" , "HR05KV1.GN" , 
+	"HR05KV2.GN" , "HR07KV1.GN" , "HR17KV3.GN"
+    horizontal
+    "HR09KH1.GN" , "HR09KH2.GN" , "HR10KH1.GN" , "HR10KH2.GN" , "HR11KH1.GN" , "HR11KH2.GN" , "HR12KH1.GN" , "HR14KH1.GN" ,
+	"HR14KH2.GN" , "HR14KH3.GN" , "HR17KH1.GN" , "HR17KH1H.GN" , "HR17KH2.GN" , "HR17KH2H.GN" , "HR17KH3H.GN" , "HR17KH3.GN" ,
+	"HR17KH4H.GN" , "HR18KH1.GN" , "HR19KH1.GN" , "HR19KH2.GN" , "HR20KH1.GN" , "HR20KH2.GN" , "HR21KH1.GN" , "HR21KH2.GN" , 
+	"HR01KH1.GN" , "HR03KH1.GN" , "HR03KH2.GN" , "HR05KH1.GN" , "HR05KH2.GN" , "HR07KH1.GN"
+
+  </comment>
+
+  <system name="HESR_python">
+
+    <device name="HR08MH01.GN" group="DIPOLE">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="500."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="5000."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- ramp speed 0.025 T/s -->
+      <!-- I(B=1.7T) = 5000 A -->
+      <!-- maximum slope dI/dt approx. 70 [A/s] -->
+      <idotmax value="70."/>
+      
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 5000./7.14 = 700.28 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="0.714" b1="7.14" />
+        <polynomial a0="0." a1="700.28" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+        
+      </calibration>
+            
+    </device>
+
+    <device name="HR18MH23.GN" group="DIPOLE">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="500."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="5000."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- ramp speed 0.025 T/s -->
+      <!-- I(B=1.7T) = 5000 A -->
+      <!-- maximum slope dI/dt approx. 70 [A/s] -->
+      <idotmax value="70."/>
+      
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 5000./7.14 = 700.28 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="0.714" b1="7.14" />
+        <polynomial a0="0." a1="700.28" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+           
+      </calibration>
+            
+    </device>
+      
+    <device name="HR03QTA3D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR03QTA3F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR05QTA4D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name="HR05QTA4F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name="HR08QSA0D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name="HR08QSA1D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR08QSA1F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR09QSA2F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR09QSA2F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR09QSA3D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR09QSA3F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name=  "HR12QTA5D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR12QTA5F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR14QTA6D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR14QTA6F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR18QSA4D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR18QSA5D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR18QSA5F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR19QSA6D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR19QSA6F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR19QSA7D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR19QSA7F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR22QTA1D.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR22QTA1F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR22QTA2F.GN" group="QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="10."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="760."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 760/.1436 = 5292.4791 -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "0." b1="1.4316E-1" />
+        <polynomial a0="0." a1="5292.4791" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR01KS01.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR03KS02.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR03KS03.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR05KS04.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR05KS05.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR07KS06.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR08KSA1H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR08KSA1V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR09KSA2H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR09KSA2V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR10KSA3H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR10KSA3V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR10KSA4H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR11KSA4V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR12KS07.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR14KS08.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR14KS09.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR17KS10.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR17KS11.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR18KS12.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR18KSA5H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR18KSA5V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR19KSA6H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR19KSA6V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name="HR20KSA7H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR20KSA7V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name="HR20KSA8H.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR21KSA8V.GN" group="MULTIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="-290."/>
+      
+      <!-- maximum current [A] -->
+      <imax value="290."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <idotmax value="11."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- sextupole 45 T/m² at 290 A -->
+      <!-- L=0.3 m : 13.5 T/m -->
+      <!--  -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0= "-13.5" b1="13.5" />
+        <polynomial a0="0." a1="21.481" a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+
+    </device>
+
+    <device name= "HR09KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />
+      </calibration>
+            
+    </device>
+
+    <device name= "HR09KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR10KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR10KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR11KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+            
+    </device>
+
+    <device name= "HR11KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR12KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR14KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR14KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR14KH3.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KH1H.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+              </calibration>
+            
+    </device>
+
+    <device name= "HR17KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KH2H.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KH3H.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KH3.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KH4H.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR18KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR19KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR19KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR20KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR20KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR21KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR21KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR01KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR03KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR03KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR05KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR05KH2.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR07KH1.GN" group="HORIZONTALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR08KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR09KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR10KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR10KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR11KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR12KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR12KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR14KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR14KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR14KV3.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KV3.GN" group="VERTICALCORRECTOR">
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR18KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR18KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR19KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR20KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR20KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR21KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR22KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR01KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR03KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR03KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR05KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR05KV2.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR07KV1.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />           
+      </calibration>
+            
+    </device>
+
+    <device name= "HR17KV3.GN" group="VERTICALCORRECTOR">
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- minimum current [A] -->
+      <imin value="-304."/>
+
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- maximum current [A] -->
+      <imax value="304."/>
+ 
+      <!-- zero guess by Bernd Lorentz, to be updated by experts -->
+      <!-- calibration curve: linear for testing -->
+      <!-- 2 mrad at 50 Tm, L=0.3 m -->
+      <!-- ca 0.34 T at 304 A -->
+      <!-- ca 0.1 Tm at 304 A -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="blorentz">
+        <boundaries b0="-0.1" b1="0.1" />
+        <polynomial a0="0." a1="3040." a2="0." a3="0." a4="0." a5="0." a6="0." a7="0." />   
+      </calibration>
+            
+    </device>
+
+  </system>
+
+</devicedata>
+    

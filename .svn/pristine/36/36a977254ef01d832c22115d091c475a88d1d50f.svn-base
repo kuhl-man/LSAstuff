@@ -1,0 +1,1834 @@
+{
+  "DEVICES": {
+    "YRLE_BEAM": {
+      "ACCELERATOR_ZONE": "YRLE", 
+      "DESCRIPTION": "YRLE_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "YRLE_TIMEPARAM": {
+      "ACCELERATOR_ZONE": "YRLE", 
+      "DESCRIPTION": "YRLE_TIMEPARAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "TIMEPARAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }
+  }, 
+  "HIERARCHY_DETAILS": {
+    "ACCELERATOR": "CRYRING", 
+    "PARTICLE_TRANSFER": "YRLE", 
+    "VERSION_NUMBER": "1.0.0"
+  }, 
+  "LINKRULES_CONFIGS": {
+    "YRT1KH1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1KV1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LC1_V": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LD21": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LD22": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LT31": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LT32": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LT33": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LT41": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LT42": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1LT43": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "YRT1MH1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }
+  }, 
+  "PARAMETERS_HARDWARE": {}, 
+  "PARAMETERS_PHYSICS": {
+    "YRLE_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRLE_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/E_PER_CHARGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E_PER_CHARGE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/ION_SOURCE_HIGH_VOLTAGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_U", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRLE_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_TIMEPARAM/TIMING_MASTER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_MASTER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_TIMEPARAM/T_BI_DELAY": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_BI_DELAY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRLE_TIMEPARAM/T_BI_WINDOW": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_BI_WINDOW", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRLE_TIMEPARAM/T_PROCESS_KEY": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_PROCESS_KEY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_TIMEPARAM/T_PULSE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_BEAM_PULSE_LENGTH", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRLE_TIMEPARAM/T_SEQUENCE_KEY": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRLE_TIMEPARAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIMING_SEQUENCE_KEY", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DC2/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DC2/GAIN": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TAU_NLP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YRT1DC2/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DC2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DC2/TIME_OF_FLIGHT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIME_OF_FLIGHT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DC3/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DC3/GAIN": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TAU_NLP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YRT1DC3/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DC3/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DC3/TIME_OF_FLIGHT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DC3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIME_OF_FLIGHT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DF2/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DF2/GAIN": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TAU_NLP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YRT1DF2/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DF2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DF2/TIME_OF_FLIGHT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF2", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIME_OF_FLIGHT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DF3/CHOPPED_BEAM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DF3/GAIN": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TAU_NLP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 3
+    }, 
+    "YRT1DF3/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1DF3/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ACTIVE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 1
+    }, 
+    "YRT1DF3/TIME_OF_FLIGHT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1DF3", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TIME_OF_FLIGHT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1KH1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1KH1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1KH1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1KH1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1KH1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1KH1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1KV1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1KV1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1KV1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1KV1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1KV1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1KV1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LC1_V/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LC1_V", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRT1LC1_V/TCHOP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LC1_V", 
+      "PARAMETER_TYPE_NAME": "SCALAR_THIGH", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRT1LC1_V/TOFFSET": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LC1_V", 
+      "PARAMETER_TYPE_NAME": "SCALAR_TOFFSET", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRT1LC1_V/U": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LC1_V", 
+      "PARAMETER_TYPE_NAME": "U", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRT1LC1_V/UCHOP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LC1_V", 
+      "PARAMETER_TYPE_NAME": "UCHOP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 8
+    }, 
+    "YRT1LD21/HORSTEER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "SCALAR_HOR_STEER_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD21/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD21/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LD21/UBOTTOM": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "U_BOTTOM", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD21/ULEFT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "U_LEFT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD21/URIGHT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "U_RIGHT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD21/UTOP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "U_TOP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD21/VERSTEER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD21", 
+      "PARAMETER_TYPE_NAME": "SCALAR_VER_STEER_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD22/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD22", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD22/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD22", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LD22/UHOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD22", 
+      "PARAMETER_TYPE_NAME": "U_HOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LD22/UVER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LD22", 
+      "PARAMETER_TYPE_NAME": "U_VER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT31/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT31", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT31/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT31", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LT31/UHOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT31", 
+      "PARAMETER_TYPE_NAME": "U_HOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT31/UVER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT31", 
+      "PARAMETER_TYPE_NAME": "U_VER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT32/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT32", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT32/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT32", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LT32/UHOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT32", 
+      "PARAMETER_TYPE_NAME": "U_HOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT32/UVER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT32", 
+      "PARAMETER_TYPE_NAME": "U_VER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT33/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT33", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT33/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT33", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LT33/UHOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT33", 
+      "PARAMETER_TYPE_NAME": "U_HOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT33/UVER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT33", 
+      "PARAMETER_TYPE_NAME": "U_VER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT41/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT41", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT41/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT41", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LT41/UHOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT41", 
+      "PARAMETER_TYPE_NAME": "U_HOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT41/UVER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT41", 
+      "PARAMETER_TYPE_NAME": "U_VER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT42/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT42", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT42/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT42", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LT42/UHOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT42", 
+      "PARAMETER_TYPE_NAME": "U_HOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT42/UVER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT42", 
+      "PARAMETER_TYPE_NAME": "U_VER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT43/KNOB": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT43", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ASYMMETRY_KNOB", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT43/U0": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT43", 
+      "PARAMETER_TYPE_NAME": "U_QUAD", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1LT43/UHOR": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT43", 
+      "PARAMETER_TYPE_NAME": "U_HOR", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1LT43/UVER": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1LT43", 
+      "PARAMETER_TYPE_NAME": "U_VER", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "YRT1MH1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1MH1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1MH1/I": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1MH1", 
+      "PARAMETER_TYPE_NAME": "I", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }, 
+    "YRT1MH1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "YRT1MH1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": 6
+    }
+  }, 
+  "PARAMETER_RELATIONS": {
+    "DEFAULT": {
+      "YRLE_BEAM/A": {
+        "YRLE_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "YRLE_BEAM/AOQ": {
+        "YRLE_BEAM/A": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "YRLE_BEAM/BRHO": {
+        "YRLE_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "YRLE_BEAM/E": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/ISOTOPE": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "YRLE_BEAM/ERHO": {
+        "YRLE_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "YRLE_BEAM/E_PER_CHARGE": {
+        "YRLE_BEAM/ION_SOURCE_HIGH_VOLTAGE": {
+          "POSITION": null
+        }
+      }, 
+      "YRLE_TIMEPARAM/TIMING_MASTER": {
+        "YRLE_TIMEPARAM/T_BI_DELAY": {
+          "POSITION": null
+        }, 
+        "YRLE_TIMEPARAM/T_BI_WINDOW": {
+          "POSITION": null
+        }, 
+        "YRLE_TIMEPARAM/T_PROCESS_KEY": {
+          "POSITION": null
+        }, 
+        "YRLE_TIMEPARAM/T_PULSE": {
+          "POSITION": null
+        }, 
+        "YRLE_TIMEPARAM/T_SEQUENCE_KEY": {
+          "POSITION": null
+        }
+      }, 
+      "YRLE_TIMEPARAM/T_PULSE": {
+        "YRT1LC1_V/TCHOP": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DC2/CHOPPED_BEAM": {
+        "YRLE_BEAM/CHOPPED_BEAM": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DC2/Q": {
+        "YRLE_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DC2/TIME_OF_FLIGHT": {
+        "YRLE_BEAM/A": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DC3/CHOPPED_BEAM": {
+        "YRLE_BEAM/CHOPPED_BEAM": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DC3/Q": {
+        "YRLE_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DC3/TIME_OF_FLIGHT": {
+        "YRLE_BEAM/A": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DF2/CHOPPED_BEAM": {
+        "YRLE_BEAM/CHOPPED_BEAM": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DF2/Q": {
+        "YRLE_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DF2/TIME_OF_FLIGHT": {
+        "YRLE_BEAM/A": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DF3/CHOPPED_BEAM": {
+        "YRLE_BEAM/CHOPPED_BEAM": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DF3/Q": {
+        "YRLE_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1DF3/TIME_OF_FLIGHT": {
+        "YRLE_BEAM/A": {
+          "POSITION": null
+        }, 
+        "YRLE_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1KH1/BL": {
+        "YRLE_BEAM/BRHO": {
+          "POSITION": null
+        }, 
+        "YRT1KH1/KL": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1KH1/I": {
+        "YRT1KH1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1KH1/Setting#current": {
+        "YRT1KH1/I": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1KV1/BL": {
+        "YRLE_BEAM/BRHO": {
+          "POSITION": null
+        }, 
+        "YRT1KV1/KL": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1KV1/I": {
+        "YRT1KV1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1KV1/Setting#current": {
+        "YRT1KV1/I": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LC1_V/KL": {
+        "YRLE_BEAM/ERHO": {
+          "POSITION": null
+        }, 
+        "YRT1LC1_V/U": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LC1_V/Setting#voltageS": {
+        "YRT1LC1_V/UCHOP": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LC1_V/UCHOP": {
+        "YRLE_BEAM/ERHO": {
+          "POSITION": null
+        }, 
+        "YRT1LC1_V/KL": {
+          "POSITION": null
+        }, 
+        "YRT1LC1_V/TCHOP": {
+          "POSITION": null
+        }, 
+        "YRT1LC1_V/TOFFSET": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21/UBOTTOM": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/HORSTEER": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/U0": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/VERSTEER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21/ULEFT": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/HORSTEER": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/U0": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/VERSTEER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21/URIGHT": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/HORSTEER": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/U0": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/VERSTEER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21/UTOP": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/HORSTEER": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/U0": {
+          "POSITION": null
+        }, 
+        "YRT1LD21/VERSTEER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21L/Setting#voltageS": {
+        "YRT1LD21/ULEFT": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21O/Setting#voltageS": {
+        "YRT1LD21/UTOP": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21R/Setting#voltageS": {
+        "YRT1LD21/URIGHT": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD21U/Setting#voltageS": {
+        "YRT1LD21/UBOTTOM": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD22/Setting#voltageH": {
+        "YRT1LD22/UHOR": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD22/Setting#voltageV": {
+        "YRT1LD22/UVER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD22/UHOR": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LD22/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LD22/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LD22/UVER": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LD22/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LD22/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT31/Setting#voltageH": {
+        "YRT1LT31/UHOR": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT31/Setting#voltageV": {
+        "YRT1LT31/UVER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT31/UHOR": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT31/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT31/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT31/UVER": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT31/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT31/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT32/Setting#voltageH": {
+        "YRT1LT32/UHOR": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT32/Setting#voltageV": {
+        "YRT1LT32/UVER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT32/UHOR": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT32/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT32/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT32/UVER": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT32/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT32/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT33/Setting#voltageH": {
+        "YRT1LT33/UHOR": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT33/Setting#voltageV": {
+        "YRT1LT33/UVER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT33/UHOR": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT33/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT33/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT33/UVER": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT33/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT33/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT41/Setting#voltageH": {
+        "YRT1LT41/UHOR": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT41/Setting#voltageV": {
+        "YRT1LT41/UVER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT41/UHOR": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT41/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT41/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT41/UVER": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT41/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT41/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT42/Setting#voltageH": {
+        "YRT1LT42/UHOR": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT42/Setting#voltageV": {
+        "YRT1LT42/UVER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT42/UHOR": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT42/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT42/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT42/UVER": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT42/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT42/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT43/Setting#voltageH": {
+        "YRT1LT43/UHOR": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT43/Setting#voltageV": {
+        "YRT1LT43/UVER": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT43/UHOR": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT43/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT43/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1LT43/UVER": {
+        "YRLE_BEAM/E_PER_CHARGE": {
+          "POSITION": null
+        }, 
+        "YRT1LT43/KNOB": {
+          "POSITION": null
+        }, 
+        "YRT1LT43/U0": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1MH1/BL": {
+        "YRLE_BEAM/BRHO": {
+          "POSITION": null
+        }, 
+        "YRT1MH1/KL": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1MH1/I": {
+        "YRT1MH1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "YRT1MH1/Setting#current": {
+        "YRT1MH1/I": {
+          "POSITION": null
+        }
+      }
+    }
+  }, 
+  "SYSTEM_CONFIGS": {
+    "YRLE_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "YRLE_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "YRLE_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "YRLE_BEAM/CHOPPED_BEAM": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_BEAM/E": {
+      "BEAM": {}
+    }, 
+    "YRLE_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "YRLE_BEAM/E_PER_CHARGE": {
+      "BEAM": {}
+    }, 
+    "YRLE_BEAM/ION_SOURCE_HIGH_VOLTAGE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_TIMEPARAM/TIMING_MASTER": {
+      "TIMEPARAM": {}
+    }, 
+    "YRLE_TIMEPARAM/T_BI_DELAY": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_TIMEPARAM/T_BI_WINDOW": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_TIMEPARAM/T_PROCESS_KEY": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "YRLE_TIMEPARAM/T_PULSE": {
+      "TIMEPARAM": {}
+    }, 
+    "YRLE_TIMEPARAM/T_SEQUENCE_KEY": {
+      "-TOPLEVEL": {}, 
+      "TIMEPARAM": {}, 
+      "generation": {}
+    }, 
+    "YRT1DC2/CHOPPED_BEAM": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DC2/GAIN": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DC2/Q": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DC2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DC2/TIME_OF_FLIGHT": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DC3/CHOPPED_BEAM": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DC3/GAIN": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DC3/Q": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DC3/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DC3/TIME_OF_FLIGHT": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DF2/CHOPPED_BEAM": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DF2/GAIN": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DF2/Q": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DF2/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DF2/TIME_OF_FLIGHT": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DF3/CHOPPED_BEAM": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DF3/GAIN": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DF3/Q": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1DF3/SEMI_AUTOMATIC_GAIN_RANGE": {
+      "-TOPLEVEL": {}, 
+      "FARADAY_CUP": {}, 
+      "generation": {}
+    }, 
+    "YRT1DF3/TIME_OF_FLIGHT": {
+      "FARADAY_CUP": {}
+    }, 
+    "YRT1KH1/BL": {
+      "CORRH": {}
+    }, 
+    "YRT1KH1/I": {
+      "CORRH": {}
+    }, 
+    "YRT1KH1/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YRT1KV1/BL": {
+      "CORRV": {}
+    }, 
+    "YRT1KV1/I": {
+      "CORRV": {}
+    }, 
+    "YRT1KV1/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "YRT1LC1_V/KL": {
+      "CORRH": {}
+    }, 
+    "YRT1LC1_V/TCHOP": {
+      "-TOPLEVEL": {}, 
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YRT1LC1_V/TOFFSET": {
+      "-TOPLEVEL": {}, 
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YRT1LC1_V/U": {
+      "-TOPLEVEL": {}, 
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "YRT1LC1_V/UCHOP": {
+      "CORRH": {}
+    }, 
+    "YRT1LD21/HORSTEER": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LD21/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LD21/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LD21/UBOTTOM": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LD21/ULEFT": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LD21/URIGHT": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LD21/UTOP": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LD21/VERSTEER": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LD22/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LD22/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LD22/UHOR": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LD22/UVER": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT31/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT31/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT31/UHOR": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT31/UVER": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT32/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT32/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT32/UHOR": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT32/UVER": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT33/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT33/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT33/UHOR": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT33/UVER": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT41/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT41/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT41/UHOR": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT41/UVER": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT42/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT42/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT42/UHOR": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT42/UVER": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT43/KNOB": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT43/U0": {
+      "-TOPLEVEL": {}, 
+      "QUADCORR": {}, 
+      "generation": {}
+    }, 
+    "YRT1LT43/UHOR": {
+      "QUADCORR": {}
+    }, 
+    "YRT1LT43/UVER": {
+      "QUADCORR": {}
+    }, 
+    "YRT1MH1/BL": {
+      "DIPOLE": {}
+    }, 
+    "YRT1MH1/I": {
+      "DIPOLE": {}
+    }, 
+    "YRT1MH1/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }
+  }
+}

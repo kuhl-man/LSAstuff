@@ -1,0 +1,76 @@
+from generic_hierarchy_generator import GenericHierarchy
+
+from init_lh_builder import INIT_LH_BUILDER
+
+from sis100_devices import SIS100_DEVICES
+from sis100_properties import SIS100_PROPERTIES
+
+class SIS100Generator(GenericHierarchy, INIT_LH_BUILDER):
+    
+    def __init__(self):
+        
+        if not hasattr(self, 'lh_builder'):
+            SIS100_properties = SIS100_PROPERTIES()
+            INIT_LH_BUILDER.__init__(self, SIS100_properties)
+        
+        SIS100_device_groups = SIS100_DEVICES()
+        GenericHierarchy.__init__(self, SIS100_device_groups)
+        
+        self.discrete_bp = False
+
+    def __buildSpecial(self):
+        # print('No special part for SIS100!')
+        # build special part of hierarchy for SIS100
+        
+        for device in (self.devices.chromaticity_sextupoles):
+            kldelta_parameter = self.reader.find_unique_string(device + '/KLDELTA$', self.lh_builder.lh.get_parameters())
+            self.lh_builder.remove_child_node(kldelta_parameter, [ self.incorpip_parameter, self.kl_harm_parameter, self.kl_phase_parameter, self.kl_ampl_parameter, self.kl_offset_parameter ])
+            
+            kl_parameter = self.reader.find_unique_string(device + '/KL$', self.lh_builder.lh.get_parameters())
+            self.lh_builder.remove_child_node(kl_parameter, [kldelta_parameter])
+            
+            # TODO
+            del self.lh_builder.lh.data ['PARAMETERS_PHYSICS'] [ kldelta_parameter ]
+            del self.lh_builder.lh.data['SYSTEM_CONFIGS'][kldelta_parameter]['SEXTUPOLE']
+            del self.lh_builder.lh.data['SYSTEM_CONFIGS'][kldelta_parameter]
+            #del self.lh_builder.lh.data['PARAMETER_RELATIONS']['DEFAULT'][kldelta_parameter]
+
+        self.lh_builder.create_child_node(self.opticsip_parameter, [ self.tau_start_end_parameter, self.incorpip_parameter, self.tgrid_parameter, self.tround_parameter, self.t_wait_parameter, self.gamma_parameter ])
+
+
+        ## Resonance sextupoles
+#        for device in self.devices.resonance_sextupoles:
+#            kldelta_parameter = self.lh_builder.lh.define_physics_parameter(device + '/KLDELTA', 'DELTA_K2L', device)
+#            
+#            system = self.devices.devicesystemmap.get(device)
+#            print (device , system)
+#            
+#            self.lh_builder.lh.add_parameter_to_system(kldelta_parameter, system)
+
+        ## Resonance sextupoles
+#        for device in self.devices.resonance_sextupoles:
+#            kldelta_parameter = self.reader.find_unique_string(device + '/KLDELTA$', self.lh_builder.lh.get_parameters())
+#            self.lh_builder.create_child_node(kldelta_parameter, [ self.incorpip_parameter, self.kl_harm_parameter, self.kl_phase_parameter, self.kl_ampl_parameter, self.kl_offset_parameter ])
+#            kl_parameter = self.reader.find_unique_string(device + '/K2?L$', self.lh_builder.lh.get_parameters())    
+#            self.lh_builder.create_child_node(kl_parameter, [ self.opticsip_parameter, kldelta_parameter ]) 
+
+    def build(self):
+        
+        # build generic part of hierarchy
+        GenericHierarchy.build(self)
+        
+        # build special part of hierarchy for SIS100
+        self.__buildSpecial()
+        
+        GenericHierarchy.generate_linkrules(self)
+        
+    def generate(self):
+        self.lh_builder.export()
+
+        
+
+if __name__ == '__main__':
+        
+    h2 = SIS100Generator()
+    h2.build()
+    h2.generate()

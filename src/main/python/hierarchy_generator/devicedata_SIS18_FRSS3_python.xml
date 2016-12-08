@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devicedata>
+
+  <comment>
+    The data of the devices are collected in this file
+  </comment>
+
+  <system name="SIS18_FRSS3_python">
+
+    <device name="TS4QT11G" group="HEBT_QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="600.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="50.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="600.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.985913"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.8384"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1074"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.985913" b1="5.88748" b2="7.82348" b3="10.8384"/>
+        <polynomial a0="-0.578623" a1="51.4399" a2="-0.157146" a3="0.057482" />
+        <polynomial a0="-66.5039" a1="82.5484" a2="-5.01907" a3="0.267129"/>
+        <polynomial a0="-257.635" a1="162.246" a2="-16.0248" a3="0.770936"/>
+      </calibration>
+    </device>
+
+<device name="TS4KY1G" group="HEBT_VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-22.5"/>
+
+      <!-- maximum current [A] -->
+      <imax value="22.5"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="-22.5"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="22.5"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.020070"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.020070"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.707"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.020070" b1="0.0066900" b2="0.0066900" b3="0.020070"/>
+        <polynomial a0="-0.0000995008" a1="1121.03" a2="-5.20582" a3="172.470" />
+        <polynomial a0="0.000000000000000981979" a1="1121.07" a2="-0.0000000000318628" a3="50.4485"/>
+        <polynomial a0="0.0000995008" a1="1121.03" a2="5.20582" a3="-172.470"/>
+      </calibration>
+    </device>
+    
+    <device name="TS4QT12G" group="HEBT_QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="600.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="50.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="600.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="1.17391"/>
+
+      <!-- maximum integral field -->
+      <blmax value="12.9619"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1216"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="1.17391" b1="5.8549" b2="9.33172" b3="12.9619"/>
+        <polynomial a0="-0.518147" a1="43.2019" a2="-0.166871" a3="0.0166611" />
+        <polynomial a0="-23.7595" a1="53.1498" a2="-1.53104" a3="0.752597"/>
+        <polynomial a0="-204.967" a1="120.304" a2="-9.68095" a3="0.400441"/>
+      </calibration>
+    </device>
+    
+    <device name="TS4QT13G" group="HEBT_QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="600.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="50.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="600.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.987747"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.8395"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1074"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.987747" b1="5.89355" b2="7.82896" b3="10.8395"/>
+        <polynomial a0="-0.579246" a1="51.3369" a2="-0.148489" a3="0.0157295" />
+        <polynomial a0="-67.1851" a1="82.7362" a2="-5.05116" a3="0.268978"/>
+        <polynomial a0="-264.177" a1="164.482" a2="-16.2922" a3="0.781632"/>
+      </calibration>
+    </device>
+    
+    <device name="TS4KS1G" group="HEBT_SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="20.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="85.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="20.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="85.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="2.54545"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.8047"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.5134"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="2.54545" b1="5.08524" b2="8.90106" b3="10.8047"/>
+        <polynomial a0="0.119707" a1="7.71512" a2="0.0496576" a3="-0.00484443" />
+        <polynomial a0="0.31651" a1="7.75321" a2="0.0118436" a3="-0.000378129"/>
+        <polynomial a0="-0.872783" a1="8.14404" a2="-0.0309391" a3="0.0011819"/>
+      </calibration>
+    </device>
+    
+    <device name="TS4MU1G" group="HEBT_DIPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="30.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="900.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="30.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="900.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.003"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.312"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-12000.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="12000.0"/>
+
+      <!-- maximum slope dI/dt [A/s] -->
+      <idotmax value="8300.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.351703"/>
+
+      <!-- maximum integral field -->
+      <blmax value="9.7613"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.2641"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.351703" b1="1.13717" b2="6.826" b3="9.7613"/>
+        <polynomial a0="-2.8302" a1="95.6567" a2="-7.44205" a3="0.248228"/>
+        <polynomial a0="-0.948795" a1="89.1882" a2="-0.430246" a3="0.0389728" />
+        <polynomial a0="-578.349" a1="336.911" a2="-35.8361" a3="1.72472" />     
+      </calibration>     
+    </device>
+    
+    <device name="TS4KS2G" group="HEBT_SEXTUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="20.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="85.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="20.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="85.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="2.54545"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.8047"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.5134"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T/m" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="2.54545" b1="5.08524" b2="8.90106" b3="10.8047"/>
+        <polynomial a0="0.119707" a1="7.71512" a2="0.0496576" a3="-0.00484443" />
+        <polynomial a0="0.31651" a1="7.75321" a2="0.0118436" a3="-0.000378129"/>
+        <polynomial a0="-0.872783" a1="8.14404" a2="-0.0309391" a3="0.0011819"/>
+      </calibration>
+    </device>
+    
+    <device name="TS4QD21G" group="HEBT_QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="600.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="50.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="600.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.987747"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.8395"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1074"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.985815" b1="5.88984" b2="7.82818" b3="10.8591"/>
+        <polynomial a0="-0.512374" a1="51.3566" a2="-0.127223" a3="0.0119737" />
+        <polynomial a0="-30.6345" a1="66.0688" a2="-2.51803" a3="0.141221"/>
+        <polynomial a0="-413.997" a1="217.307" a2="-22.3899" a3="1.01019"/>
+      </calibration>
+    </device>
+    
+    <device name="TS4KY2G" group="HEBT_VERTICALCORRECTOR">
+
+      <!-- minimum current [A] -->
+      <imin value="-22.5"/>
+
+      <!-- maximum current [A] -->
+      <imax value="22.5"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="-22.5"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="22.5"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="-0.020070"/>
+
+      <!-- maximum integral field -->
+      <blmax value="0.020070"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.707"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="-0.020070" b1="0.0066900" b2="0.0066900" b3="0.020070"/>
+        <polynomial a0="-0.0000995008" a1="1121.03" a2="-5.20582" a3="172.470" />
+        <polynomial a0="0.000000000000000981979" a1="1121.07" a2="-0.0000000000318628" a3="50.4485"/>
+        <polynomial a0="0.0000995008" a1="1121.03" a2="5.20582" a3="-172.470"/>
+      </calibration>
+    </device>
+    
+    <device name="TS4QD22G" group="HEBT_QUADRUPOLE">
+
+      <!-- minimum current [A] -->
+      <imin value="50.0"/>
+
+      <!-- maximum current [A] -->
+      <imax value="600.0"/>
+
+      <!-- minimum intercycle current [A] -->
+      <intercyclemin value="50.0"/>
+
+      <!-- maximum intercycle current [A] -->
+      <intercyclemax value="600.0"/>
+
+      <!-- eddy current delay time [s] -->
+      <eddycurrentdelaytime value="0.0015"/>
+
+      <!-- eddy current amplitude [H] -->
+      <eddycurrentamplitude value="0.0768"/>
+
+      <!-- minimum feed forward voltage [V] -->
+      <ffVoltagemin value="-1200.0"/>
+
+      <!-- maximum feed forward voltage [V] -->
+      <ffVoltagemax value="1200.0"/>
+
+      <!-- minimum integral field -->
+      <blmin value="0.985341"/>
+
+      <!-- maximum integral field -->
+      <blmax value="10.8406"/>
+
+      <!-- electric resistance [Ohm] -->
+      <resistance value="0.1074"/>
+
+      <!-- calibration curve: boundaries and polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="SISSTD.eix">
+        <boundaries b0="0.985341" b1="5.88356" b2="7.81801" b3="10.8406"/>
+        <polynomial a0="-0.54258" a1="51.4181" a2="-0.137286" a3="0.0137117" />
+        <polynomial a0="-46.3230" a1="73.3152" a2="-3.61325" a3="0.196717"/>
+        <polynomial a0="-321.180" a1="184.739" a2="-18.6269" a3="0.869317"/>
+      </calibration>
+    </device>
+    
+  </system>
+
+</devicedata>

@@ -1,0 +1,260 @@
+{
+  "DEVICES": {
+    "SIS18_EXTRACTION_BEAM": {
+      "ACCELERATOR_ZONE": "SIS18_EXTRACTION", 
+      "DESCRIPTION": "SIS18_EXTRACTION_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }
+  }, 
+  "HIERARCHY_DETAILS": {
+    "ACCELERATOR": "SIS18", 
+    "PARTICLE_TRANSFER": "SIS18_EXTRACTION", 
+    "VERSION_NUMBER": "1.0.0"
+  }, 
+  "LINKRULES_CONFIGS": {}, 
+  "PARAMETERS_HARDWARE": {}, 
+  "PARAMETERS_PHYSICS": {
+    "GS04ME1E/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GS04ME1E", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GS04ME1E/USEP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GS04ME1E", 
+      "PARAMETER_TYPE_NAME": "USEP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": false, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": false, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": false, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": false, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": false, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }
+  }, 
+  "PARAMETER_RELATIONS": {
+    "DEFAULT": {
+      "GS04ME1E/CLVOLTLS#cl1voltl": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/CLVOLTLS#cl2voltl": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/CLVOLTS#cl1volt": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/CLVOLTS#cl2volt": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/USEP": {
+        "GS04ME1E/KL": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/ERHO": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/VOLTAGES#voltages": {
+        "GS04ME1E/USEP": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/VOLTLOWS#voltlows": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/A": {
+        "SIS18_EXTRACTION_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/AOQ": {
+        "SIS18_EXTRACTION_BEAM/A": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/BRHO": {
+        "SIS18_EXTRACTION_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/E": {
+        "SIS18BEAM/E_START_END": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/ERHO": {
+        "SIS18_EXTRACTION_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }
+    }
+  }, 
+  "SYSTEM_CONFIGS": {
+    "GS04ME1E/CLVOLTLS#cl1voltl": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/CLVOLTLS#cl2voltl": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/CLVOLTS#cl1volt": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/CLVOLTS#cl2volt": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/KL": {
+      "-TOPLEVEL": {}, 
+      "SEPTUM": {}, 
+      "generation": {}
+    }, 
+    "GS04ME1E/USEP": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/VOLTAGES#voltages": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/VOLTLOWS#voltlows": {
+      "SEPTUM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }
+  }
+}

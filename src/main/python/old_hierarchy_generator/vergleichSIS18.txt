@@ -1,0 +1,1081 @@
+3c3
+<     "accelerator": "SIS18TEST", 
+---
+>     "accelerator": "SIS18", 
+9,10c9,10
+<       "S00BE_FS/RAMPVALS#data": {
+<         "SIS18BEAM/FREV": {
+---
+>       "S00BE_FS/MHBPAR#DAmp1": {
+>         "SIS18BEAM/H": {
+14c14
+<       "S00BE_PS/MHBPAR#DAmp1": {
+---
+>       "S00BE_FS/MHBPAR#DAmp2": {
+19c19
+<       "S00BE_PS/MHBPAR#DAmp2": {
+---
+>       "S00BE_FS/MHBPAR#Delay": {
+24c24
+<       "S00BE_PS/MHBPAR#Delay": {
+---
+>       "S00BE_FS/MHBPAR#Harm1": {
+29c29
+<       "S00BE_PS/MHBPAR#Harm1": {
+---
+>       "S00BE_FS/MHBPAR#Harm2": {
+34,35c34,35
+<       "S00BE_PS/MHBPAR#Harm2": {
+<         "SIS18BEAM/H": {
+---
+>       "S00BE_FS/RAMPVALS#data": {
+>         "SIS18BEAM/FREV": {
+39c39
+<       "S00BE_PS/SYNCMODE#hfssync": {
+---
+>       "S00BE_FS/SYNCMODE#hfssync": {
+44c44
+<       "S00BE_PS/WORKMODE#workmode": {
+---
+>       "S00BE_FS/WORKMODE#workmode": {
+161a162,166
+>       "S01KM2DV/RAMPVALS#data": {
+>         "S01KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+182a188,192
+>       "S01KM3QS/RAMPVALS#data": {
+>         "S01KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+229a240,244
+>       "S01KS1C/RAMPVALS#data": {
+>         "S01KS1C/I": {
+>           "position": null
+>         }
+>       }, 
+276a292,296
+>       "S01KS3C/RAMPVALS#data": {
+>         "S01KS3C/I": {
+>           "position": null
+>         }
+>       }, 
+348a369,373
+>       "S01MU1A/RAMPVALS#data": {
+>         "S01MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+380a406,413
+>       "S01QS1F/RAMPVALS#data": {
+>         "S01QS1F/I": {
+>           "position": null
+>         }, 
+>         "S01QS1F/U": {
+>           "position": null
+>         }
+>       }, 
+425a459,466
+>       "S01QS2D/RAMPVALS#data": {
+>         "S01QS2D/I": {
+>           "position": null
+>         }, 
+>         "S01QS2D/U": {
+>           "position": null
+>         }
+>       }, 
+530a572,576
+>       "S02KM2DV/RAMPVALS#data": {
+>         "S02KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+551a598,602
+>       "S02KM3QS/RAMPVALS#data": {
+>         "S02KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+572a624,628
+>       "S02KM5SS/RAMPVALS#data": {
+>         "S02KM5SS/I": {
+>           "position": null
+>         }
+>       }, 
+593a650,654
+>       "S02KQ1E/RAMPVALS#data": {
+>         "S02KQ1E/I": {
+>           "position": null
+>         }
+>       }, 
+614a676,680
+>       "S02KQ4/RAMPVALS#data": {
+>         "S02KQ4/I": {
+>           "position": null
+>         }
+>       }, 
+655a722,729
+>       "S02MU1A/RAMPVALS#data": {
+>         "S02MU1A/ICORR": {
+>           "position": null
+>         }, 
+>         "S02MU1A/UCORR": {
+>           "position": null
+>         }
+>       }, 
+693a768,772
+>       "S03KM2DV/RAMPVALS#data": {
+>         "S03KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+740a820,824
+>       "S03KS1C/RAMPVALS#data": {
+>         "S03KS1C/I": {
+>           "position": null
+>         }
+>       }, 
+787a872,876
+>       "S03KS3C/RAMPVALS#data": {
+>         "S03KS3C/I": {
+>           "position": null
+>         }
+>       }, 
+859a949,953
+>       "S03MU1A/RAMPVALS#data": {
+>         "S03MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+889a984,988
+>       "S04KM2DV/RAMPVALS#data": {
+>         "S04KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+910a1010,1014
+>       "S04KM3QS/RAMPVALS#data": {
+>         "S04KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+931a1036,1040
+>       "S04KQ4/RAMPVALS#data": {
+>         "S04KQ4/I": {
+>           "position": null
+>         }
+>       }, 
+1026a1136,1140
+>       "S04MU1A/RAMPVALS#data": {
+>         "S04MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+1067a1182,1189
+>       "S04MU2A/RAMPVALS#data": {
+>         "S04MU2A/ICORR": {
+>           "position": null
+>         }, 
+>         "S04MU2A/UCORR": {
+>           "position": null
+>         }
+>       }, 
+1105a1228,1232
+>       "S05KM2DV/RAMPVALS#data": {
+>         "S05KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+1152a1280,1284
+>       "S05KS1C/RAMPVALS#data": {
+>         "S05KS1C/I": {
+>           "position": null
+>         }
+>       }, 
+1199a1332,1336
+>       "S05KS3C/RAMPVALS#data": {
+>         "S05KS3C/I": {
+>           "position": null
+>         }
+>       }, 
+1253a1391,1395
+>       "S05MU1A/RAMPVALS#data": {
+>         "S05MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+1283a1426,1430
+>       "S05MU2A/RAMPVALS#data": {
+>         "S05MU2A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+1313a1461,1465
+>       "S06KM2DV/RAMPVALS#data": {
+>         "S06KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+1334a1487,1491
+>       "S06KM3QS/RAMPVALS#data": {
+>         "S06KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+1364a1522,1526
+>       "S06MU1A/RAMPVALS#data": {
+>         "S06MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+1400a1563,1567
+>       "S06MU2A/RAMPVALS#data": {
+>         "S06MU2A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+1624a1792,1796
+>       "S07KM2DV/RAMPVALS#data": {
+>         "S07KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+1645a1818,1822
+>       "S07KM3QS/RAMPVALS#data": {
+>         "S07KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+1692a1870,1874
+>       "S07KS1C/RAMPVALS#data": {
+>         "S07KS1C/I": {
+>           "position": null
+>         }
+>       }, 
+1739a1922,1926
+>       "S07KS3C/RAMPVALS#data": {
+>         "S07KS3C/I": {
+>           "position": null
+>         }
+>       }, 
+1783a1971,1978
+>       "S07MU1A/RAMPVALS#data": {
+>         "S07MU1A/ICORR": {
+>           "position": null
+>         }, 
+>         "S07MU1A/UCORR": {
+>           "position": null
+>         }
+>       }, 
+1821a2017,2021
+>       "S07MU2A/RAMPVALS#data": {
+>         "S07MU2A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+1913a2114,2118
+>       "S08KM2DV/RAMPVALS#data": {
+>         "S08KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+1934a2140,2144
+>       "S08KM3QS/RAMPVALS#data": {
+>         "S08KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+1955a2166,2170
+>       "S08KM5SS/RAMPVALS#data": {
+>         "S08KM5SS/I": {
+>           "position": null
+>         }
+>       }, 
+1976a2192,2196
+>       "S08KQ4/RAMPVALS#data": {
+>         "S08KQ4/I": {
+>           "position": null
+>         }
+>       }, 
+2017a2238,2245
+>       "S08MU1A/RAMPVALS#data": {
+>         "S08MU1A/ICORR": {
+>           "position": null
+>         }, 
+>         "S08MU1A/UCORR": {
+>           "position": null
+>         }
+>       }, 
+2055a2284,2288
+>       "S09KM2DV/RAMPVALS#data": {
+>         "S09KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+2102a2336,2340
+>       "S09KS1C/RAMPVALS#data": {
+>         "S09KS1C/I": {
+>           "position": null
+>         }
+>       }, 
+2149a2388,2392
+>       "S09KS3C/RAMPVALS#data": {
+>         "S09KS3C/I": {
+>           "position": null
+>         }
+>       }, 
+2185a2429,2433
+>       "S09MU1A/RAMPVALS#data": {
+>         "S09MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+2215a2464,2468
+>       "S10KM2DV/RAMPVALS#data": {
+>         "S10KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+2236a2490,2494
+>       "S10KM3QS/RAMPVALS#data": {
+>         "S10KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+2257a2516,2520
+>       "S10KQ4/RAMPVALS#data": {
+>         "S10KQ4/I": {
+>           "position": null
+>         }
+>       }, 
+2293a2557,2561
+>       "S10MU1A/RAMPVALS#data": {
+>         "S10MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+2320a2589,2593
+>       "S10MU2A/RAMPVALS#data": {
+>         "S10MU2A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+2350a2624,2628
+>       "S11KM2DV/RAMPVALS#data": {
+>         "S11KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+2397a2676,2680
+>       "S11KS1C/RAMPVALS#data": {
+>         "S11KS1C/I": {
+>           "position": null
+>         }
+>       }, 
+2444a2728,2732
+>       "S11KS3C/RAMPVALS#data": {
+>         "S11KS3C/I": {
+>           "position": null
+>         }
+>       }, 
+2516a2805,2809
+>       "S11MU1A/RAMPVALS#data": {
+>         "S11MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+2542a2836,2843
+>       "S11MU2/RAMPVALS#data": {
+>         "S11MU2/I": {
+>           "position": null
+>         }, 
+>         "S11MU2/U": {
+>           "position": null
+>         }
+>       }, 
+2582a2884,2888
+>       "S11MU2A/RAMPVALS#data": {
+>         "S11MU2A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+2612a2919,2923
+>       "S12KM2DV/RAMPVALS#data": {
+>         "S12KM2DV/I": {
+>           "position": null
+>         }
+>       }, 
+2633a2945,2949
+>       "S12KM3QS/RAMPVALS#data": {
+>         "S12KM3QS/I": {
+>           "position": null
+>         }
+>       }, 
+2705a3022,3026
+>       "S12MU1A/RAMPVALS#data": {
+>         "S12MU1A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+2732a3054,3058
+>       "S12MU2A/RAMPVALS#data": {
+>         "S12MU2A/ICORR": {
+>           "position": null
+>         }
+>       }, 
+2764a3091,3098
+>       "S12QS1F/RAMPVALS#data": {
+>         "S12QS1F/I": {
+>           "position": null
+>         }, 
+>         "S12QS1F/U": {
+>           "position": null
+>         }
+>       }, 
+2809a3144,3151
+>       "S12QS2D/RAMPVALS#data": {
+>         "S12QS2D/I": {
+>           "position": null
+>         }, 
+>         "S12QS2D/U": {
+>           "position": null
+>         }
+>       }, 
+2854a3197,3204
+>       "S12QS3T/RAMPVALS#data": {
+>         "S12QS3T/I": {
+>           "position": null
+>         }, 
+>         "S12QS3T/U": {
+>           "position": null
+>         }
+>       }, 
+3381c3731
+<     "S00BE_FS/RAMPVALS#data": {
+---
+>     "S00BE_FS/MHBPAR#DAmp1": {
+3385c3735
+<       "field_name": "data", 
+---
+>       "field_name": "DAmp1", 
+3387c3737
+<       "property_name": "RAMPVALS", 
+---
+>       "property_name": "MHBPAR", 
+3392c3742
+<     "S00BE_PS/MHBPAR#DAmp1": {
+---
+>     "S00BE_FS/MHBPAR#DAmp2": {
+3395,3396c3745,3746
+<       "device_name": "S00BE_PS", 
+<       "field_name": "DAmp1", 
+---
+>       "device_name": "S00BE_FS", 
+>       "field_name": "DAmp2", 
+3403c3753
+<     "S00BE_PS/MHBPAR#DAmp2": {
+---
+>     "S00BE_FS/MHBPAR#Delay": {
+3406,3407c3756,3757
+<       "device_name": "S00BE_PS", 
+<       "field_name": "DAmp2", 
+---
+>       "device_name": "S00BE_FS", 
+>       "field_name": "Delay", 
+3414c3764
+<     "S00BE_PS/MHBPAR#Delay": {
+---
+>     "S00BE_FS/MHBPAR#Harm1": {
+3417,3418c3767,3768
+<       "device_name": "S00BE_PS", 
+<       "field_name": "Delay", 
+---
+>       "device_name": "S00BE_FS", 
+>       "field_name": "Harm1", 
+3425c3775
+<     "S00BE_PS/MHBPAR#Harm1": {
+---
+>     "S00BE_FS/MHBPAR#Harm2": {
+3428,3429c3778,3779
+<       "device_name": "S00BE_PS", 
+<       "field_name": "Harm1", 
+---
+>       "device_name": "S00BE_FS", 
+>       "field_name": "Harm2", 
+3436c3786
+<     "S00BE_PS/MHBPAR#Harm2": {
+---
+>     "S00BE_FS/RAMPVALS#data": {
+3439,3440c3789,3790
+<       "device_name": "S00BE_PS", 
+<       "field_name": "Harm2", 
+---
+>       "device_name": "S00BE_FS", 
+>       "field_name": "data", 
+3442c3792
+<       "property_name": "MHBPAR", 
+---
+>       "property_name": "RAMPVALS", 
+3447c3797
+<     "S00BE_PS/SYNCMODE#hfssync": {
+---
+>     "S00BE_FS/SYNCMODE#hfssync": {
+3450c3800
+<       "device_name": "S00BE_PS", 
+---
+>       "device_name": "S00BE_FS", 
+3458c3808
+<     "S00BE_PS/WORKMODE#workmode": {
+---
+>     "S00BE_FS/WORKMODE#workmode": {
+3461c3811
+<       "device_name": "S00BE_PS", 
+---
+>       "device_name": "S00BE_FS", 
+3546c3896
+<     "S01MB3/CURRENTS#currents": {
+---
+>     "S01KM2DV/RAMPVALS#data": {
+3549,3550c3899,3944
+<       "device_name": "S01MB3", 
+<       "field_name": "currents", 
+---
+>       "device_name": "S01KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S01KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S01KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S01KS1C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S01KS1C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S01KS3C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S01KS3C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S01MB3/CURRENTS#currents": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S01MB3", 
+>       "field_name": "currents", 
+3589a3984,4005
+>     "S01QS1F/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S01QS1F", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S01QS2D/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S01QS2D", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3633a4050,4104
+>     "S02KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S02KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S02KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S02KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S02KM5SS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S02KM5SS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S02KQ1E/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S02KQ1E", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S02KQ4/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S02KQ4", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3644a4116,4148
+>     "S03KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S03KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S03KS1C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S03KS1C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S03KS3C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S03KS3C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3688a4193,4225
+>     "S04KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S04KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S04KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S04KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S04KQ4/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S04KQ4", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3787a4325,4357
+>     "S05KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S05KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S05KS1C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S05KS1C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S05KS3C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S05KS3C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3809a4380,4401
+>     "S06KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S06KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S06KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S06KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3853a4446,4489
+>     "S07KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S07KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S07KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S07KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S07KS1C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S07KS1C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S07KS3C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S07KS3C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3919a4556,4599
+>     "S08KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S08KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S08KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S08KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S08KM5SS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S08KM5SS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S08KQ4/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S08KQ4", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3930a4611,4643
+>     "S09KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S09KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S09KS1C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S09KS1C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S09KS3C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S09KS3C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3941a4655,4687
+>     "S10KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S10KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S10KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S10KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S10KQ4/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S10KQ4", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+3963a4710,4742
+>     "S11KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S11KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S11KS1C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S11KS1C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S11KS3C/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S11KS3C", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+4007a4787,4797
+>     "S11MU2/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S11MU2", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+4018a4809,4830
+>     "S12KM2DV/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S12KM2DV", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S12KM3QS/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S12KM3QS", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+4072a4885,4917
+>     }, 
+>     "S12QS1F/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S12QS1F", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S12QS2D/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S12QS2D", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+>     "S12QS3T/RAMPVALS#data": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S12QS3T", 
+>       "field_name": "data", 
+>       "is_trimable": true, 
+>       "property_name": "RAMPVALS", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+4545a5391,5400
+>     "S02KM5SS/KLDELTA": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S02KM5SS", 
+>       "is_trimable": true, 
+>       "parameter_type_name": "DELTA_K2L", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+5885a6741,6750
+>     "S08KM5SS/KLDELTA": {
+>       "belongs_to_function_bproc": true, 
+>       "default_hierarchy": "DEFAULT", 
+>       "device_name": "S08KM5SS", 
+>       "is_trimable": true, 
+>       "parameter_type_name": "DELTA_K2L", 
+>       "usergroup": "OP", 
+>       "x_prec": null, 
+>       "y_prec": null
+>     }, 
+7711c8576
+<       "parameter_type_name": "SCALAR_CAVITY_MODE", 
+---
+>       "parameter_type_name": "MODE", 

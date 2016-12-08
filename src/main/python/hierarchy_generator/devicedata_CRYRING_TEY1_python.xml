@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devicedata>
+
+  <comment>
+  The data of the devices are collected in this file
+
+    1. magnetic quadrupoles --- taken from LSA data base (Magnet group -> W. Geithner ???) and inverted by myself, if necessary
+    2. dipole magnet --- taken from LSA data base (Magnet group -> W. Geithner ???)
+    3. steerer magnets --- coarsely adapted to a guess
+
+  </comment>
+
+  <system name="CRYRING_TEY1">
+
+    <device name="GHTYQD21" group="QUADRUPOLE">
+      <!-- minimum current [A] -->
+      <imin value="0.1"/>
+      <!-- maximum current [A] -->
+      <imax value="170."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="LSA data base, inverted by ikraus">
+          <boundaries b0= "-6.843255" b1= "-5.363465" b2= "-0.83746" b3= "-0.023755"/> 
+          <polynomial a0= "-124.5676" a1= "-93.34807" a2= "-12.97046" a3= "-0.81754"/>
+          <polynomial a0= "-0.445398" a1= "-24.34037" a2= "-0.182292" a3= "-0.027623"/>
+          <polynomial a0= "-0.524601" a1= "-24.52317" a2= "-0.280065" a3= "-0.018573"/>
+      </calibration>
+    </device>
+
+    <device name="GHTYQD22" group="QUADRUPOLE">
+      <!-- minimum current [A] -->
+      <imin value="0.1"/>
+      <!-- maximum current [A] -->
+      <imax value="170."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="LSA data base">
+          <boundaries b0= "0.023755" b1= "0.83746" b2= "5.363465" b3= "6.843255"/> 
+          <polynomial a0= "-0.524601" a1= "24.52317" a2= "-0.280065" a3= "0.018573"/>
+          <polynomial a0= "-0.445398" a1= "24.34037" a2= "-0.182292" a3= "0.027623"/>
+          <polynomial a0= "-124.5676" a1= "93.34807" a2= "-12.97046" a3= "0.81754"/>
+      </calibration>
+    </device>
+
+
+    <device name="GHTYMH2" group="DIPOLE">
+      <!-- minimum current [A] -->
+      <imin value="1."/>
+      <!-- maximum current [A] -->
+      <imax value="500."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="LSA data base">
+          <boundaries b0= "0.002238" b1= "0.842927" b2= "1.41538" b3= "1.854073"/>
+          <polynomial a0= "-0.483263" a1= "237.5937" a2= "-3.110658" a3= "2.616718"/>
+          <polynomial a0= "-13.01198" a1= "278.5552" a2= "-47.40042" a3= "18.42873"/>
+          <polynomial a0= "-501.1466" a1= "1399.800" a2= "-900.7777" a3= "233.8168"/>
+      </calibration>
+    </device>
+
+
+    <device name="GHTYQD31" group="QUADRUPOLE">
+      <!-- minimum current [A] -->
+      <imin value="0.1"/>
+      <!-- maximum current [A] -->
+      <imax value="170."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="LSA data base, inverted by ikraus">
+          <boundaries b0= "-6.843255" b1= "-5.363465" b2= "-0.83746" b3= "-0.023755"/> 
+          <polynomial a0= "-124.5676" a1= "-93.34807" a2= "-12.97046" a3= "-0.81754"/>
+          <polynomial a0= "-0.445398" a1= "-24.34037" a2= "-0.182292" a3= "-0.027623"/>
+          <polynomial a0= "-0.524601" a1= "-24.52317" a2= "-0.280065" a3= "-0.018573"/>
+      </calibration>
+    </device>
+
+    <device name="GHTYQD32" group="QUADRUPOLE">
+      <!-- minimum current [A] -->
+      <imin value="0.1"/>
+      <!-- maximum current [A] -->
+      <imax value="170."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B'*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="T" yunit="A" precision="1.0E-5" source="LSA data base">
+          <boundaries b0= "0.023755" b1= "0.83746" b2= "5.363465" b3= "6.843255"/> 
+          <polynomial a0= "-0.524601" a1= "24.52317" a2= "-0.280065" a3= "0.018573"/>
+          <polynomial a0= "-0.445398" a1= "24.34037" a2= "-0.182292" a3= "0.027623"/>
+          <polynomial a0= "-124.5676" a1= "93.34807" a2= "-12.97046" a3= "0.81754"/>
+      </calibration>
+    </device>
+
+
+    <device name="GHTYKV2" group="VERTICALCORRECTOR">
+      <!-- copy of GHTYKV3, to be updated by experts -->
+      <!-- taken from LSR TDR -->
+      <!-- maximum current [A] -->
+      <imax value="13."/>
+      <!-- minimum current [A] -->
+      <imin value="-13."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ikraus dummy">
+        <boundaries b0="-0.043" b1="0.043" />
+        <polynomial a0="0" a1="300."  />   
+      </calibration>
+    </device>
+
+    <device name="GHTYKH2" group="HORIZONTALCORRECTOR">
+      <!-- copy of GHTYKV3, to be updated by experts -->
+      <!-- taken from LSR TDR -->
+      <!-- maximum current [A] -->
+      <imax value="13."/>
+      <!-- minimum current [A] -->
+      <imin value="-13."/>
+
+      <!-- calibration curve: polynomial coefficients for I = I(B*L) -->
+      <calibration type="MAG_INTFIELD2CURRENT" xunit="Tm" yunit="A" precision="1.0E-5" source="ikraus dummy">
+        <boundaries b0="-0.043" b1="0.043" />
+        <polynomial a0="0" a1="300."  />   
+      </calibration>
+    </device>
+
+
+  </system>
+
+</devicedata>
+    

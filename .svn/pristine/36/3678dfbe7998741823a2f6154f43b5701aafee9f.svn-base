@@ -1,0 +1,2101 @@
+{
+  "DEVICES": {
+    "HHTMU1_TO_HHT_BEAM": {
+      "ACCELERATOR_ZONE": "HHTMU1_TO_HHT", 
+      "DESCRIPTION": "HHTMU1_TO_HHT_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "SIS18_EXTRACTION_BEAM": {
+      "ACCELERATOR_ZONE": "SIS18_EXTRACTION", 
+      "DESCRIPTION": "SIS18_EXTRACTION_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "SIS18_TO_TS1MU1_BEAM": {
+      "ACCELERATOR_ZONE": "SIS18_TO_TS1MU1", 
+      "DESCRIPTION": "SIS18_TO_TS1MU1_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM": {
+      "ACCELERATOR_ZONE": "TE3MU1_TO_HHTMU1", 
+      "DESCRIPTION": "TE3MU1_TO_HHTMU1_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM": {
+      "ACCELERATOR_ZONE": "TS1MU1_TO_TE3MU1", 
+      "DESCRIPTION": "TS1MU1_TO_TE3MU1_BEAM Transfer Line Beam", 
+      "DEVICE_ALIAS": null, 
+      "DEVICE_TYPE": "BEAM", 
+      "IS_MULTIPLEXED": true, 
+      "IS_RESTORABLE": true, 
+      "SRC": "LSA"
+    }
+  }, 
+  "HIERARCHY_DETAILS": {
+    "ACCELERATOR": "SIS18", 
+    "PARTICLE_TRANSFER": "SIS18_TH_HHT", 
+    "VERSION_NUMBER": "1.0.0"
+  }, 
+  "LINKRULES_CONFIGS": {
+    "GHHTMU1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTMU2": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTMU3": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTMU4": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTQD11": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTQD12": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTQD21": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTQD22": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTQT31": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTQT32": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GHHTQT33": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE1KY1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE1QD11": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE1QD12": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE2KX1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE2QT11": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE2QT12": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE2QT13": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTE3MU1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTH1KX1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTH1KY1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTH1QD11": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTH1QD12": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }, 
+    "GTS1MU1": {
+      "GENERATION_LINKRULE": "DEFAULTLR", 
+      "TRIM_LINKRULE": "DEFAULTLR"
+    }
+  }, 
+  "PARAMETERS_HARDWARE": {}, 
+  "PARAMETERS_PHYSICS": {
+    "GHHTMU1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTMU1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTMU2/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU2", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTMU2/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU2", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTMU3/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU3", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTMU3/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU3", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTMU4/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU4", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTMU4/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTMU4", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD11/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD11", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD11/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD11", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD12/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD12", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD12/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD12", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD21/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD21", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD21/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD21", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD22/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD22", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQD22/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQD22", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQT31/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQT31", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQT31/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQT31", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQT32/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQT32", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQT32/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQT32", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQT33/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQT33", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GHHTQT33/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GHHTQT33", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GS04ME1E/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GS04ME1E", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GS04ME1E/USEP": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GS04ME1E", 
+      "PARAMETER_TYPE_NAME": "USEP", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE1KY1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE1KY1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE1KY1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE1KY1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE1QD11/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE1QD11", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE1QD11/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE1QD11", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE1QD12/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE1QD12", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE1QD12/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE1QD12", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2KX1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2KX1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2KX1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2KX1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2QT11/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2QT11", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2QT11/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2QT11", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2QT12/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2QT12", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2QT12/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2QT12", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2QT13/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2QT13", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE2QT13/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE2QT13", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE3MU1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE3MU1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTE3MU1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTE3MU1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1KX1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1KX1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1KX1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1KX1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1KY1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1KY1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1KY1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1KY1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1QD11/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1QD11", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1QD11/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1QD11", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1QD12/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1QD12", 
+      "PARAMETER_TYPE_NAME": "B1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTH1QD12/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTH1QD12", 
+      "PARAMETER_TYPE_NAME": "K1L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTS1MU1/BL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTS1MU1", 
+      "PARAMETER_TYPE_NAME": "B0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "GTS1MU1/KL": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "GTS1MU1", 
+      "PARAMETER_TYPE_NAME": "K0L", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "HHTMU1_TO_HHT_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "HHTMU1_TO_HHT_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_EXTRACTION_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_EXTRACTION_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "SIS18_TO_TS1MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TE3MU1_TO_HHTMU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/A": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_A", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/AOQ": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_AOQ", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "BRHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/E": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_E", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/ELEMENT": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ELEMENT", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/ERHO": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "ERHO", 
+      "TRIMABLE": false, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/ISOTOPE": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_ISOTOPE", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/Q": {
+      "BELONGS_TO_FUNCTION_BPROC": true, 
+      "DEFAULT_HIERARCHY": "DEFAULT", 
+      "DEVICE_NAME": "TS1MU1_TO_TE3MU1_BEAM", 
+      "PARAMETER_TYPE_NAME": "SCALAR_Q", 
+      "TRIMABLE": true, 
+      "USERGROUP": "OP", 
+      "X_PREC": null, 
+      "Y_PREC": null
+    }
+  }, 
+  "PARAMETER_RELATIONS": {
+    "DEFAULT": {
+      "GHHTMU1/BL": {
+        "GHHTMU1/KL": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTMU1/FIELDS#fields": {
+        "GHHTMU1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTMU2/BL": {
+        "GHHTMU2/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTMU2/FIELDS#fields": {
+        "GHHTMU2/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTMU3/BL": {
+        "GHHTMU3/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTMU3/FIELDS#fields": {
+        "GHHTMU3/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTMU4/BL": {
+        "GHHTMU4/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTMU4/FIELDS#fields": {
+        "GHHTMU4/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD11/BL": {
+        "GHHTQD11/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD11/FIELDS#fields": {
+        "GHHTQD11/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD12/BL": {
+        "GHHTQD12/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD12/FIELDS#fields": {
+        "GHHTQD12/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD21/BL": {
+        "GHHTQD21/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD21/FIELDS#fields": {
+        "GHHTQD21/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD22/BL": {
+        "GHHTQD22/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQD22/FIELDS#fields": {
+        "GHHTQD22/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQT31/BL": {
+        "GHHTQT31/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQT31/FIELDS#fields": {
+        "GHHTQT31/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQT32/BL": {
+        "GHHTQT32/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQT32/FIELDS#fields": {
+        "GHHTQT32/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQT33/BL": {
+        "GHHTQT33/KL": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GHHTQT33/FIELDS#fields": {
+        "GHHTQT33/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/CLVOLTLS#cl1voltl": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/CLVOLTLS#cl2voltl": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/CLVOLTS#cl1volt": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/CLVOLTS#cl2volt": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/USEP": {
+        "GS04ME1E/KL": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/ERHO": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/VOLTAGES#voltages": {
+        "GS04ME1E/USEP": {
+          "POSITION": null
+        }
+      }, 
+      "GS04ME1E/VOLTLOWS#voltlows": {
+        "GS04ME1E/VOLTAGES#voltages": {
+          "POSITION": null
+        }
+      }, 
+      "GTE1KY1/BL": {
+        "GTE1KY1/KL": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE1KY1/FIELDS#fields": {
+        "GTE1KY1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTE1QD11/BL": {
+        "GTE1QD11/KL": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE1QD11/FIELDS#fields": {
+        "GTE1QD11/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTE1QD12/BL": {
+        "GTE1QD12/KL": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE1QD12/FIELDS#fields": {
+        "GTE1QD12/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2KX1/BL": {
+        "GTE2KX1/KL": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2KX1/FIELDS#fields": {
+        "GTE2KX1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2QT11/BL": {
+        "GTE2QT11/KL": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2QT11/FIELDS#fields": {
+        "GTE2QT11/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2QT12/BL": {
+        "GTE2QT12/KL": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2QT12/FIELDS#fields": {
+        "GTE2QT12/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2QT13/BL": {
+        "GTE2QT13/KL": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE2QT13/FIELDS#fields": {
+        "GTE2QT13/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTE3MU1/BL": {
+        "GTE3MU1/KL": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTE3MU1/FIELDS#fields": {
+        "GTE3MU1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1KX1/BL": {
+        "GTH1KX1/KL": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1KX1/FIELDS#fields": {
+        "GTH1KX1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1KY1/BL": {
+        "GTH1KY1/KL": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1KY1/FIELDS#fields": {
+        "GTH1KY1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1QD11/BL": {
+        "GTH1QD11/KL": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1QD11/FIELDS#fields": {
+        "GTH1QD11/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1QD12/BL": {
+        "GTH1QD12/KL": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTH1QD12/FIELDS#fields": {
+        "GTH1QD12/BL": {
+          "POSITION": null
+        }
+      }, 
+      "GTS1MU1/BL": {
+        "GTS1MU1/KL": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "GTS1MU1/FIELDS#fields": {
+        "GTS1MU1/BL": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/A": {
+        "HHTMU1_TO_HHT_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/AOQ": {
+        "HHTMU1_TO_HHT_BEAM/A": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/BRHO": {
+        "HHTMU1_TO_HHT_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/E": {
+        "TE3MU1_TO_HHTMU1_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/ELEMENT": {
+        "TE3MU1_TO_HHTMU1_BEAM/ELEMENT": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/ERHO": {
+        "HHTMU1_TO_HHT_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "HHTMU1_TO_HHT_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/ISOTOPE": {
+        "TE3MU1_TO_HHTMU1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "HHTMU1_TO_HHT_BEAM/Q": {
+        "TE3MU1_TO_HHTMU1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/A": {
+        "SIS18_EXTRACTION_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/AOQ": {
+        "SIS18_EXTRACTION_BEAM/A": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/BRHO": {
+        "SIS18_EXTRACTION_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/E": {
+        "SIS18BEAM/E_START_END": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_EXTRACTION_BEAM/ERHO": {
+        "SIS18_EXTRACTION_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "SIS18_EXTRACTION_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/A": {
+        "SIS18_TO_TS1MU1_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/AOQ": {
+        "SIS18_TO_TS1MU1_BEAM/A": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/BRHO": {
+        "SIS18_TO_TS1MU1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/E": {
+        "SIS18_EXTRACTION_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/ELEMENT": {
+        "SIS18_EXTRACTION_BEAM/ELEMENT": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/ERHO": {
+        "SIS18_TO_TS1MU1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "SIS18_TO_TS1MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/ISOTOPE": {
+        "SIS18_EXTRACTION_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "SIS18_TO_TS1MU1_BEAM/Q": {
+        "SIS18_EXTRACTION_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/A": {
+        "TE3MU1_TO_HHTMU1_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/AOQ": {
+        "TE3MU1_TO_HHTMU1_BEAM/A": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+        "TE3MU1_TO_HHTMU1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/E": {
+        "TS1MU1_TO_TE3MU1_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/ELEMENT": {
+        "TS1MU1_TO_TE3MU1_BEAM/ELEMENT": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/ERHO": {
+        "TE3MU1_TO_HHTMU1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/ISOTOPE": {
+        "TS1MU1_TO_TE3MU1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "TE3MU1_TO_HHTMU1_BEAM/Q": {
+        "TS1MU1_TO_TE3MU1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/A": {
+        "TS1MU1_TO_TE3MU1_BEAM/ELEMENT": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/AOQ": {
+        "TS1MU1_TO_TE3MU1_BEAM/A": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/Q": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+        "TS1MU1_TO_TE3MU1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/E": {
+        "SIS18_TO_TS1MU1_BEAM/E": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/ELEMENT": {
+        "SIS18_TO_TS1MU1_BEAM/ELEMENT": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/ERHO": {
+        "TS1MU1_TO_TE3MU1_BEAM/AOQ": {
+          "POSITION": null
+        }, 
+        "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/ISOTOPE": {
+        "SIS18_TO_TS1MU1_BEAM/ISOTOPE": {
+          "POSITION": null
+        }
+      }, 
+      "TS1MU1_TO_TE3MU1_BEAM/Q": {
+        "SIS18_TO_TS1MU1_BEAM/Q": {
+          "POSITION": null
+        }
+      }
+    }
+  }, 
+  "SYSTEM_CONFIGS": {
+    "GHHTMU1/BL": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU1/FIELDS#fields": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU1/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTMU2/BL": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU2/FIELDS#fields": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU2/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTMU3/BL": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU3/FIELDS#fields": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU3/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTMU4/BL": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU4/FIELDS#fields": {
+      "DIPOLE": {}
+    }, 
+    "GHHTMU4/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTQD11/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD11/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD11/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTQD12/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD12/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD12/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTQD21/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD21/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD21/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTQD22/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD22/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQD22/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTQT31/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQT31/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQT31/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTQT32/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQT32/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQT32/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GHHTQT33/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQT33/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GHHTQT33/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GS04ME1E/CLVOLTLS#cl1voltl": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/CLVOLTLS#cl2voltl": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/CLVOLTS#cl1volt": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/CLVOLTS#cl2volt": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/KL": {
+      "-TOPLEVEL": {}, 
+      "SEPTUM": {}, 
+      "generation": {}
+    }, 
+    "GS04ME1E/USEP": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/VOLTAGES#voltages": {
+      "SEPTUM": {}
+    }, 
+    "GS04ME1E/VOLTLOWS#voltlows": {
+      "SEPTUM": {}
+    }, 
+    "GTE1KY1/BL": {
+      "CORRV": {}
+    }, 
+    "GTE1KY1/FIELDS#fields": {
+      "CORRV": {}
+    }, 
+    "GTE1KY1/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "GTE1QD11/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE1QD11/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE1QD11/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTE1QD12/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE1QD12/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE1QD12/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTE2KX1/BL": {
+      "CORRH": {}
+    }, 
+    "GTE2KX1/FIELDS#fields": {
+      "CORRH": {}
+    }, 
+    "GTE2KX1/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "GTE2QT11/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE2QT11/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE2QT11/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTE2QT12/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE2QT12/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE2QT12/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTE2QT13/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE2QT13/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTE2QT13/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTE3MU1/BL": {
+      "DIPOLE": {}
+    }, 
+    "GTE3MU1/FIELDS#fields": {
+      "DIPOLE": {}
+    }, 
+    "GTE3MU1/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTH1KX1/BL": {
+      "CORRH": {}
+    }, 
+    "GTH1KX1/FIELDS#fields": {
+      "CORRH": {}
+    }, 
+    "GTH1KX1/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRH": {}, 
+      "generation": {}
+    }, 
+    "GTH1KY1/BL": {
+      "CORRV": {}
+    }, 
+    "GTH1KY1/FIELDS#fields": {
+      "CORRV": {}
+    }, 
+    "GTH1KY1/KL": {
+      "-TOPLEVEL": {}, 
+      "CORRV": {}, 
+      "generation": {}
+    }, 
+    "GTH1QD11/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTH1QD11/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTH1QD11/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTH1QD12/BL": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTH1QD12/FIELDS#fields": {
+      "QUADRUPOLE": {}
+    }, 
+    "GTH1QD12/KL": {
+      "-TOPLEVEL": {}, 
+      "QUADRUPOLE": {}, 
+      "generation": {}
+    }, 
+    "GTS1MU1/BL": {
+      "DIPOLE": {}
+    }, 
+    "GTS1MU1/FIELDS#fields": {
+      "DIPOLE": {}
+    }, 
+    "GTS1MU1/KL": {
+      "-TOPLEVEL": {}, 
+      "DIPOLE": {}, 
+      "generation": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "HHTMU1_TO_HHT_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_EXTRACTION_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "SIS18_TO_TS1MU1_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TE3MU1_TO_HHTMU1_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/A": {
+      "BEAM": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/AOQ": {
+      "BEAM": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/BRHO": {
+      "BEAM": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/E": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/ELEMENT": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/ERHO": {
+      "BEAM": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/ISOTOPE": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }, 
+    "TS1MU1_TO_TE3MU1_BEAM/Q": {
+      "-TOPLEVEL": {}, 
+      "BEAM": {}, 
+      "generation": {}
+    }
+  }
+}
